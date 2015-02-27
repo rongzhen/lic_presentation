@@ -1,0 +1,138 @@
+\documentclass[mathserif,envcountsect,compress]{beamer}
+%\usepackage{cctbase,ccmap,everb}               % CCT 的相关宏包, 使支持中文, 等等.
+%\usepackage[normalem]{CCTfntef}                % 2005-11-18 向作者报告 bug 后, 修改.
+\usepackage{hyperref}
+\hypersetup{CJKbookmarks=true}
+\usetheme{Madrid}%\usecolortheme{albatross}
+%\setbeamercolor{background canvas}{bg=blue!9} % 背景颜色可调.
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{color,xcolor, colortbl}
+\usepackage{pgf,tikz}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{picins}                            % 图片嵌入段落宏包 比如照片
+\usepackage{graphicx}
+\usepackage{epstopdf} 
+\usepackage{fixltx2e}
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{navigation symbols}{}
+%------------------------------------------------------
+\usepackage{bbding}% 手势 \HandRight \HandLeft %\FiveStar \FourStar \SixStar
+\newcommand{\handr}{\textcolor{magenta}{\HandRight}} % 自定义\handr
+%%==================================自定义=========================================%
+\newcommand{\jieda}{\noindent\textcolor{red}{\heiti an:}\quad}
+\newcommand{\zheng}{\noindent\textcolor{red}{\heiti prove:}\quad}
+\newcommand{\yunhan}{\,{\color{red!70}\Rightarrow}\,}
+
+\makeatletter %自定义: 罗马数字
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
+\makeatother
+%==============自定义: 逐个 item 高亮(\hilite), 或"高黑"(\hidark)==================%
+\def\hilite<#1>{%
+\temporal<#1>{\color{blue!35}}{\color{magenta}}%
+{\color{blue!75}}}
+\def\hidark<#1>{%
+\temporal<#1>{\color{black!35}}{\color{magenta}}%
+{\color{black}}}
+%====================== metapost =================================================%
+\usepackage{xmpmulti}  %% metapost 动画
+\DeclareGraphicsRule{*}{mps}{*}{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\AtBeginSection[]{
+     \frametitle{frame}\small
+   \tableofcontents[currentsection,currentsubsection,subsectionstyle=show/show/hide]
+ }
+\title[Licentiate Seminar]{Exploring the Electronic and Optical Properties of Cu(In,Ga)Se\textsubscript{2}}%({\small \kaishu reference})}
+\author[Rongzhen Chen]{Rongzhen\ Chen\\[0.3em]Supervisor: Clas Persson}
+\institute[MMM, MSE, KTH]{\textcolor[rgb]{0.85,0.42,0.00}{%Multiscale Materials Modelling \\
+Department of Materials Science and Engineering\\
+Royal Institute of Technology, Stockholm SE-10044, Sweden}}
+\small\date{Mar-06-2015}
+\titlegraphic{\includegraphics[height=0.15\textwidth]{figures/kth.eps}}
+\frame{\titlepage}
+
+\begin{frame}\frametitle{Outline}\small
+\tableofcontents
+\end{frame}
+
+
+\section{Background}
+\begin{frame}
+\frametitle{What material am I working on?}
+\begin{center}
+\includegraphics[height=0.65\textwidth]{figures/CIGS_1.eps}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Why Cu(In,Ga)Se\textsubscript{2}?}
+\begin{center}
+\includegraphics[height=0.65\textwidth]{figures/CIGS_2.eps}
+\end{center}
+\end{frame}
+
+
+
+
+
+\section{$Ab$ $initio$ alloy theory}
+\subsection{Density functional theory }
+\begin{frame}
+\frametitle{Density functional theory (DFT)}
+%\begin{columns}[c]
+%\column{2in}
+\begin{itemize}
+  \item the ground state of an interacting electron system is uniquely described by an energy functional of the electron density,
+  \item the true ground state electron density minimizes the energy functional and the minimum gives the total energy.
+\end{itemize}
+\begin{equation}
+[-\nabla^2+V_{eff}(\textbf{r})]\psi_i^k = \epsilon_i^k \psi_i^k,
+\label{ks}
+\end{equation}
+\begin{equation}
+V_{eff}(\textbf{r})= V_{ext}(\textbf{r}) +\int \frac {n(\textbf{r}')}{|\textbf{r}-\textbf{r}'|} d \textbf{r}' +\mu_{xc}(\textbf{r}),
+\end{equation}
+\begin{equation}
+\mu_{xc}\equiv\delta E_{xc}[n(\textbf{r})]/\delta n(\textbf{r}).
+\end{equation}
+\begin{equation}
+E_{tot}=T_s+\int v_{ext}(\textbf{r})n(\textbf{r})d^3r+\frac 1 2 \int\int\frac{n(\textbf{r})n(\textbf{r}')}{|\textbf{r}-\textbf{r}'|}d^3rd^3r'+E_{xc}
+\label{dft}
+\end{equation}
+
+
+
+\end{frame}
+
+\begin{frame}
+ 
+ \includegraphics{figures/kth.eps}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\setbeamertemplate{background canvas}[vertical shading][bottom=white,top=structure.fg!25]
+\begin{frame}
+ \begin{center}
+{\huge \emph{\textcolor[rgb]{0.50,0.00,1.00}{Thank  ~you ~for ~your ~attention!}}}\\
+\vspace{5mm}\large
+\begin{tabular}{cc}
+   %{Student}:
+   & \textsf{F. Y. Tian}\\
+  %{Co-student}: & \textsf{L. Delczeg} \\
+ % {Supervisor}: & L. Vitos \\
+        %         & Stockholm, 100 44, Sweden \\
+    %{\sc Email}:
+    & \href{mailto:tfy123ster@gmail.com}{\color{blue!70}fuyang@kth.se}\\
+\end{tabular}
+ \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

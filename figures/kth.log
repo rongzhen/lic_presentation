@@ -1,0 +1,1138 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  26 FEB 2015 16:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**kth.eps
+(./kth.eps
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 4 languages loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 s
+      ystemdict/setpacking known
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.29 userdict/Adobe_
+                    AGM_Utils 75 dict dup begin put
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 29.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 29.
+! Double subscript.
+l.128 ...STATE_gy_xfer xdf cvlit/AGMUTIL_GSTATE_b_
+                                                  xfer xdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.129 		cvlit/AGMUTIL_GSTATE_g_
+                               xfer xdf cvlit/AGMUTIL_GSTATE_r_xfer xdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.129 ...GSTATE_g_xfer xdf cvlit/AGMUTIL_GSTATE_r_
+                                                  xfer xdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.151 	AGMUTIL_GSTATE_r_
+                        xfer cvx AGMUTIL_GSTATE_g_xfer cvx AGMUTIL_GSTATE_b_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.151 	AGMUTIL_GSTATE_r_xfer cvx AGMUTIL_GSTATE_g_
+                                                  xfer cvx AGMUTIL_GSTATE_b_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.151 ...MUTIL_GSTATE_g_xfer cvx AGMUTIL_GSTATE_b_
+                                                  xfer cvx
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.597 /ReadBypdfmark_5_
+                       string
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.607 			3 copy/PUT pdfmark_5 pop 2 copy(\n
+                                           )/PUT pdfmark_5
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.662 /AGMCORE_&
+                setgray nd
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.662 /AGMCORE_&
+                setgray nd
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.663 /AGMCORE_&
+                setcolor nd
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.663 /AGMCORE_&
+                setcolor nd
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.664 /AGMCORE_&
+                setcolorspace nd
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.664 /AGMCORE_&
+                setcolorspace nd
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.665 /AGMCORE_&
+                setcmykcolor nd
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.665 /AGMCORE_&
+                setcmykcolor nd
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.813 	0 AGMCORE_&
+                  setgray
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.813 	0 AGMCORE_&
+                  setgray
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.814 	gsave 1 AGMCORE_&
+                        setgray fill grestore
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.814 	gsave 1 AGMCORE_&
+                        setgray fill grestore
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.873 			$
+          error/newerror get AGMCORE_cur_err null ne and{
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no E in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.873 			$error/newerror get AGMCORE_
+                                     cur_err null ne and{
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.874 				$
+           error/newerror false put
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no E in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.875 				AGMCORE_
+                  cur_err compose_error_msg
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.876 			}
+          if
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no M in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.879 			errordict/AGM_
+                       handleerror get exec
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.880 			}
+          bind put
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.881 		}
+         if
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.889 	/AGMCORE_&
+                 setgray systemdict/setgray get def
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.889 	/AGMCORE_&
+                 setgray systemdict/setgray get def
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.891 		/AGMCORE_&
+                  setcolor systemdict/setcolor get def
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.891 		/AGMCORE_&
+                  setcolor systemdict/setcolor get def
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.892 		/AGMCORE_&
+                  setcolorspace systemdict/setcolorspace get def
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.892 		/AGMCORE_&
+                  setcolorspace systemdict/setcolorspace get def
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.911 		/AGMCORE_&
+                  gsave/gsave ldf
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.911 		/AGMCORE_&
+                  gsave/gsave ldf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.912 		/AGMCORE_&
+                  grestore/grestore ldf
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.912 		/AGMCORE_&
+                  grestore/grestore ldf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.913 		/AGMCORE_&
+                  grestoreall/grestoreall ldf
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.913 		/AGMCORE_&
+                  grestoreall/grestoreall ldf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.914 		/AGMCORE_&
+                  save/save ldf
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.914 		/AGMCORE_&
+                  save/save ldf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.915 		/AGMCORE_&
+                  setoverprint/setoverprint ldf
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.915 		/AGMCORE_&
+                  setoverprint/setoverprint ldf
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.932 			AGMCORE_&
+                  gsave
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.932 			AGMCORE_&
+                  gsave
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.941 			AGMCORE_&
+                  grestore
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.941 			AGMCORE_&
+                  grestore
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.949 			AGMCORE_&
+                  grestoreall
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.949 			AGMCORE_&
+                  grestoreall
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.953 			AGMCORE_&
+                  save
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.953 			AGMCORE_&
+                  save
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.963 ...rentoverprint exch AGMCORE_gput AGMCORE_&
+                                                  setoverprint
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.963 ...rentoverprint exch AGMCORE_gput AGMCORE_&
+                                                  setoverprint
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.969 	level3/AGMCORE_&
+                       sysshfill AGMCORE_key_known not and
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.969 	level3/AGMCORE_&
+                       sysshfill AGMCORE_key_known not and
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.971 		/AGMCORE_&
+                  sysshfill systemdict/shfill get def
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.971 		/AGMCORE_&
+                  sysshfill systemdict/shfill get def
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.972 		/AGMCORE_&
+                  sysmakepattern systemdict/makepattern get def
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.972 		/AGMCORE_&
+                  sysmakepattern systemdict/makepattern get def
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.973 		/AGMCORE_&
+                  usrmakepattern/makepattern load def
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.973 		/AGMCORE_&
+                  usrmakepattern/makepattern load def
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Double subscript.
+l.989 ...it/AGMCore_gray_xfer xdf cvlit/AGMCore_b_
+                                                  xfer xdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.990 		 cvlit/AGMCore_g_
+                         xfer xdf cvlit/AGMCore_r_xfer xdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.990 		 cvlit/AGMCore_g_xfer xdf cvlit/AGMCore_r_
+                                                  xfer xdf
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1001 		Adobe_AGM_Core/AGMCORE_&
+                                 setcmykcolor/setcmykcolor load put
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1001 		Adobe_AGM_Core/AGMCORE_&
+                                 setcmykcolor/setcmykcolor load put
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1162 ...tion AGMCORE_name/DeviceGray{}]AGMCORE_&
+                                                  setcolorspace
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1162 ...tion AGMCORE_name/DeviceGray{}]AGMCORE_&
+                                                  setcolorspace
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Double subscript.
+l.1239 	/AGM_avoid_0_
+                     cmyk where{
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1240 		pop AGM_avoid_0_
+                         cmyk
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1254 			/AGMCORE_&
+                    setcmykcolor load dup type/operatortype ne{
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1254 			/AGMCORE_&
+                    setcmykcolor load dup type/operatortype ne{
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Double subscript.
+l.1418 						/ColorSpace[/DeviceN[/_cyan_/_
+                                           magenta_/_yellow_/_black_]/Device...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1418 .../ColorSpace[/DeviceN[/_cyan_/_magenta_/_
+                                                  yellow_/_black_]/DeviceCMY...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1418 ...ce[/DeviceN[/_cyan_/_magenta_/_yellow_/_
+                                                  black_]/DeviceCMYK{}]def
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1571 								/ColorSpace[/DeviceN[/_red_/_
+                                            green_/_blue_]/DeviceRGB{}]def
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1571 ...			/ColorSpace[/DeviceN[/_red_/_green_/_
+                                                  blue_]/DeviceRGB{}]def
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1575 								/ColorSpace[/DeviceN[/_cyan_/_
+                                             magenta_/_yellow_/_black_]/Devi...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1575 .../ColorSpace[/DeviceN[/_cyan_/_magenta_/_
+                                                  yellow_/_black_]/DeviceCMY...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1575 ...ce[/DeviceN[/_cyan_/_magenta_/_yellow_/_
+                                                  black_]/DeviceCMYK{}]def
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1596 					{AGMCORE_&
+                      sysshfill}ifelse
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1596 					{AGMCORE_&
+                      sysshfill}ifelse
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1609 					exch AGMCORE_&
+                          sysmakepattern
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1609 					exch AGMCORE_&
+                          sysmakepattern
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1611 					exch AGMCORE_&
+                          usrmakepattern
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1611 					exch AGMCORE_&
+                          usrmakepattern
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1644 			AGMCORE_&
+                   setgray
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.1644 			AGMCORE_&
+                   setgray
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing { inserted.
+<to be read again> 
+                   &
+l.1699 			/AGMCORE_&
+                    &&setcolorspace/setcolorspace ldf
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 8 strings out of 494989
+ 149 string characters out of 6180577
+ 130438 words of memory out of 5000000
+ 3324 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 18i,29n,12p,176b,96s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!
