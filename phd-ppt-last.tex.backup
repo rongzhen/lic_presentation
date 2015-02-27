@@ -48,17 +48,47 @@
    \tableofcontents[currentsection,currentsubsection,subsectionstyle=show/show/hide]
  }
 \title[Licentiate Seminar]{Exploring the Electronic and Optical Properties of Cu(In,Ga)Se\textsubscript{2}}%({\small \kaishu reference})}
-\author[Fuyang Tian]{Fuyang\ Tian\\[0.3em]Supervisor: Levente Vitos and Nanxian Chen}
-\institute[AMP, MSE, KTH]{\textcolor[rgb]{0.85,0.42,0.00}{%Applied Materials Physics\\
+\author[Rongzhen Chen]{Rongzhen\ Chen\\[0.3em]Supervisor: Clas Persson}
+\institute[MMM, MSE, KTH]{\textcolor[rgb]{0.85,0.42,0.00}{%Multiscale Materials Modelling \\
 Department of Materials Science and Engineering\\
 Royal Institute of Technology, Stockholm SE-10044, Sweden}}
-\small\date{Nov-29-2013}
-\titlegraphic{\includegraphics[height=0.15\textwidth]{figures/kth.jpg}}
+\small\date{Mar-06-2015}
+\titlegraphic{\includegraphics[height=0.15\textwidth]{figures/kth.eps}}
 \frame{\titlepage}
 
 \begin{frame}\frametitle{Outline}\small
 \tableofcontents
 \end{frame}
+
+
+\section{Background}
+\begin{frame}
+\frametitle{What material am I working on?}
+\begin{center}
+\includegraphics[height=0.65\textwidth]{figures/CIGS_1.eps}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Why Cu(In,Ga)Se\textsubscript{2}?}
+\begin{center}
+\includegraphics[height=0.65\textwidth]{figures/CIGS_2.eps}
+\end{center}
+\end{frame}
+
+
+\section{Motivation}
+\begin{frame}
+ \frametitle{Which aspects of Cu(In,Ga)Se2 have I been working on?}
+ \begin{itemize}
+  \item the ground state of an interacting electron system is uniquely described by an energy functional of the electron density,
+  \item Optical properties of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} are explored by means of theoretical calculations.
+\end{itemize}
+\end{frame}
+
+
 
 \section{$Ab$ $initio$ alloy theory}
 \subsection{Density functional theory }
