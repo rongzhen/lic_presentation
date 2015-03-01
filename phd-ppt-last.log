@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  27 FEB 2015 17:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  1 MAR 2015 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -758,51 +758,110 @@ hs.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 ))) (./subfigure.sty
 \c@subfigure=\count162
-) (./picins.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen198
+\captionmargin@=\dimen199
+\captionwidth=\dimen200
+\caption@tempdima=\dimen201
+\caption@indent=\dimen202
+\caption@parindent=\dimen203
+\caption@hangindent=\dimen204
+)
+\c@ContinuedFloat=\count163
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
+Package caption Info: subfigure package is loaded.
+
+
+! Package caption Error: For a successful cooperation we need at least version
+(caption)                `2002/01/23 v2.1' of package subfigure,
+(caption)                but only version
+(caption)                `'
+(caption)                is available.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1666 }{}
+          
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+
+! Package subcaption Error: This package can't be used in cooperation
+(subcaption)                with the subfigure package.
+
+See the subcaption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48   \endinput}{}
+                   %
+RTFM
+
+) (./comment.sty
+\CommentStream=\write5
+ Excluding comment 'comment') (./picins.sty
 Option `picins' Version 3.0 Sep. 1992, TH Darmstadt/HRZ
 \@BILD=\box56
 \@TEXT=\box57
-\d@breite=\dimen198
-\d@hoehe=\dimen199
-\d@xoff=\dimen200
-\d@yoff=\dimen201
-\d@shad=\dimen202
-\d@dash=\dimen203
-\d@boxl=\dimen204
-\d@pichskip=\dimen205
-\d@tmp=\dimen206
-\d@tmpa=\dimen207
-\d@bskip=\dimen208
-\hsiz@=\dimen209
-\p@getot@l=\dimen210
-\c@breite=\count163
-\c@hoehe=\count164
-\c@xoff=\count165
-\c@yoff=\count166
-\c@pos=\count167
-\c@shad=\count168
-\c@dash=\count169
-\c@boxl=\count170
-\c@zeilen=\count171
-\@changemode=\count172
-\c@piccaption=\count173
-\c@piccaptionpos=\count174
-\c@picpos=\count175
-\c@whole=\count176
-\c@half=\count177
-\c@tmp=\count178
-\c@tmpa=\count179
-\c@tmpb=\count180
-\c@tmpc=\count181
-\c@tmpd=\count182
+\d@breite=\dimen205
+\d@hoehe=\dimen206
+\d@xoff=\dimen207
+\d@yoff=\dimen208
+\d@shad=\dimen209
+\d@dash=\dimen210
+\d@boxl=\dimen211
+\d@pichskip=\dimen212
+\d@tmp=\dimen213
+\d@tmpa=\dimen214
+\d@bskip=\dimen215
+\hsiz@=\dimen216
+\p@getot@l=\dimen217
+\c@breite=\count164
+\c@hoehe=\count165
+\c@xoff=\count166
+\c@yoff=\count167
+\c@pos=\count168
+\c@shad=\count169
+\c@dash=\count170
+\c@boxl=\count171
+\c@zeilen=\count172
+\@changemode=\count173
+\c@piccaption=\count174
+\c@piccaptionpos=\count175
+\c@picpos=\count176
+\c@whole=\count177
+\c@half=\count178
+\c@tmp=\count179
+\c@tmpa=\count180
+\c@tmpb=\count181
+\c@tmpc=\count182
+\c@tmpd=\count183
 \d@leftskip=\skip60
-\ptoti=\dimen211
-\ptotii=\dimen212
+\ptoti=\dimen218
+\ptotii=\dimen219
 \env@box=\box58
-\d@envdp=\dimen213
-\c@hsize=\count183
-\c@envdp=\count184
-\d@envb=\dimen214
+\d@envdp=\dimen220
+\c@hsize=\count184
+\c@envdp=\count185
+\d@envb=\dimen221
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
@@ -827,29 +886,155 @@ Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
 LaTeX Info: Redefining \em on input line 420.
 LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
-) (./bbding.sty
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.c
+ode.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.t
+ex
+File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.cod
+e.tex
+File: pgflibraryshapes.symbols.code.tex 2009/10/27 v2.10 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code
+.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.callouts.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.co
+de.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
+ode.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box59
+\pgfnodeparttwobox=\box60
+\pgfnodepartthreebox=\box61
+\pgfnodepartfourbox=\box62
+\pgfnodeparttwentybox=\box63
+\pgfnodepartnineteenbox=\box64
+\pgfnodeparteighteenbox=\box65
+\pgfnodepartseventeenbox=\box66
+\pgfnodepartsixteenbox=\box67
+\pgfnodepartfifteenbox=\box68
+\pgfnodepartfourteenbox=\box69
+\pgfnodepartthirteenbox=\box70
+\pgfnodeparttwelvebox=\box71
+\pgfnodepartelevenbox=\box72
+\pgfnodeparttenbox=\box73
+\pgfnodepartninebox=\box74
+\pgfnodeparteightbox=\box75
+\pgfnodepartsevenbox=\box76
+\pgfnodepartsixbox=\box77
+\pgfnodepartfivebox=\box78
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
+s.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen222
+))
+(./bbding.sty
 Package: bbding 1999/04/15 v1.01 Dingbats symbols
+) (/usr/share/texmf/tex/latex/beamer/base/multimedia/xmpmulti.sty
+\@mpm@count=\count186
+) (./phd-ppt-last.aux
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \select@language{english}
+                              
+You may proceed, but expect unexpected results
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test1' multiply defined.
+
+
+LaTeX Warning: Label `fig:test2' multiply defined.
+
 )
-(/usr/share/texmf/tex/latex/beamer/base/multimedia/xmpmulti.sty
-\@mpm@count=\count185
-)
-(./phd-ppt-last.aux)
 \openout1 = `phd-ppt-last.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -887,20 +1072,20 @@ LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count186
-\scratchdimen=\dimen215
-\scratchbox=\box59
-\nofMPsegments=\count187
-\nofMParguments=\count188
+\scratchcounter=\count187
+\scratchdimen=\dimen223
+\scratchbox=\box79
+\nofMPsegments=\count188
+\nofMParguments=\count189
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count189
-\MPscratchDim=\dimen216
-\MPnumerator=\count190
-\makeMPintoPDFobject=\count191
+\MPscratchCnt=\count190
+\MPscratchDim=\dimen224
+\MPnumerator=\count191
+\makeMPintoPDFobject=\count192
 \everyMPtoPDFconversion=\toks45
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 45.
+\AtBeginShipoutBox=\box80
+Package hyperref Info: Link coloring OFF on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -908,15 +1093,15 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count192
+\c@section@level=\count193
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 
 (./phd-ppt-last.out) (./phd-ppt-last.out)
-\@outlinefile=\write5
-\openout5 = `phd-ppt-last.out'.
+\@outlinefile=\write6
+\openout6 = `phd-ppt-last.out'.
 
 
 (/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
@@ -943,17 +1128,20 @@ Dictionary: translator-numbers-dictionary, Language: English
 tionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 45.
+LaTeX Info: Redefining \includegraphics on input line 56.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: picins package is loaded.
+Package caption Info: End \AtBeginDocument code.
  (./phd-ppt-last.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 51.
+(hyperref)                setting the option has no effect on input line 64.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -966,47 +1154,76 @@ Package epstopdf Info: Source file: <figures/kth.eps>
 (epstopdf)                    size: 71199 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/kth-eps-converted-
 to.pdf figures/kth.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 70.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/kth-eps-converted-to.pdf, id=32, 286.06876pt x 286.06876pt>
+<figures/kth-eps-converted-to.pdf, id=52, 286.06876pt x 286.06876pt>
 File: figures/kth-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/kth-eps-converted-to.pdf>
-Package pdftex.def Info: figures/kth-eps-converted-to.pdf used on input line 57
+Package pdftex.def Info: figures/kth-eps-converted-to.pdf used on input line 70
 .
 (pdftex.def)             Requested size: 51.34174pt x 51.3422pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 57.
+(Font)              size <5> substituted on input line 70.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figures/kth-eps-converte
-d-to.pdf>] (./phd-ppt-last.toc) [2
+d-to.pdf>] (./phd-ppt-last.toc
 
-] (./phd-ppt-last.toc)
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+) [2
+
+] (./phd-ppt-last.toc
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
 Package epstopdf Info: Source file: <figures/CIGS_1.eps>
-(epstopdf)                    date: 2015-02-26 14:46:31
-(epstopdf)                    size: 2711677 bytes
+(epstopdf)                    date: 2015-02-28 12:36:38
+(epstopdf)                    size: 2718263 bytes
 (epstopdf)             Output file: <figures/CIGS_1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 17:14:48
-(epstopdf)                    size: 409233 bytes
+(epstopdf)                    date: 2015-02-28 15:42:22
+(epstopdf)                    size: 411158 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CIGS_1-eps-convert
 ed-to.pdf figures/CIGS_1.eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
-
-<figures/CIGS_1-eps-converted-to.pdf, id=71, 722.7pt x 542.025pt>
+ <figures/CIGS_1-eps-converted-to.pdf, id=104, 722.7pt x 542.025pt>
 File: figures/CIGS_1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CIGS_1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CIGS_1-eps-converted-to.pdf used on input line
- 70.
+ 83.
 (pdftex.def)             Requested size: 296.65077pt x 222.48985pt.
 
-Overfull \vbox (5.18176pt too high) detected at line 70
+Overfull \vbox (5.18176pt too high) detected at line 83
  []
 
 
@@ -1017,133 +1234,734 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 [4 <./figures/CIGS_1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/CIGS_2.eps>
-(epstopdf)                    date: 2015-02-26 14:46:31
-(epstopdf)                    size: 2395815 bytes
+(epstopdf)                    date: 2015-02-28 12:36:38
+(epstopdf)                    size: 2396053 bytes
 (epstopdf)             Output file: <figures/CIGS_2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 17:24:23
-(epstopdf)                    size: 611453 bytes
+(epstopdf)                    date: 2015-02-28 15:42:23
+(epstopdf)                    size: 611559 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/CIGS_2-eps-convert
 ed-to.pdf figures/CIGS_2.eps>
-(epstopdf)             \includegraphics on input line 79.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/CIGS_2-eps-converted-to.pdf, id=114, 722.7pt x 542.025pt>
+<figures/CIGS_2-eps-converted-to.pdf, id=147, 722.7pt x 542.025pt>
 File: figures/CIGS_2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/CIGS_2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/CIGS_2-eps-converted-to.pdf used on input line
- 79.
+ 92.
 (pdftex.def)             Requested size: 296.65077pt x 222.48985pt.
 
-Overfull \vbox (5.18176pt too high) detected at line 79
+Overfull \vbox (5.18176pt too high) detected at line 92
  []
 
 [5
 
- <./figures/CIGS_2-eps-converted-to.pdf>] (./phd-ppt-last.toc)
+ <./figures/CIGS_2-eps-converted-to.pdf>] (./phd-ppt-last.toc
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6
 
 ]
-[7] [8
+[7]
+Package epstopdf Info: Source file: <figures/CIGS_3.eps>
+(epstopdf)                    date: 2015-02-28 19:57:46
+(epstopdf)                    size: 2619957 bytes
+(epstopdf)             Output file: <figures/CIGS_3-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-28 22:09:12
+(epstopdf)                    size: 207995 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CIGS_3-eps-convert
+ed-to.pdf figures/CIGS_3.eps>
+(epstopdf)             \includegraphics on input line 110.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/CIGS_3-eps-converted-to.pdf, id=189, 623.32875pt x 487.8225pt>
+File: figures/CIGS_3-eps-converted-to.pdf Graphic file (type pdf)
 
-] [9
+<use figures/CIGS_3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CIGS_3-eps-converted-to.pdf used on input line
+ 110.
+(pdftex.def)             Requested size: 284.29031pt x 222.48985pt.
 
-]
+Overfull \vbox (5.18176pt too high) detected at line 110
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
+[8
 
+ <./figures/CIGS_3-eps-converted-to.pdf>]
+Overfull \hbox (38.71997pt too wide) in paragraph at lines 138--138
+[]\OT1/cmss/m/n/10 Help ex-per-i-men-tal-ists to un-der-stand the di-elec-tric 
+func-tion spec-trum of CuIn$[]$Ga$[]$Se$[]$. 
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
+<figures/APL1b.jpg, id=209, 489.62926pt x 441.44925pt>
+File: figures/APL1b.jpg Graphic file (type jpg)
+ <use figures/APL1b.jpg>
+Package pdftex.def Info: figures/APL1b.jpg used on input line 138.
+(pdftex.def)             Requested size: 119.80283pt x 108.01118pt.
+Package epstopdf Info: Source file: <figures/CIGS_4.eps>
+(epstopdf)                    date: 2015-02-28 20:09:29
+(epstopdf)                    size: 342211 bytes
+(epstopdf)             Output file: <figures/CIGS_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-28 22:10:12
+(epstopdf)                    size: 25071 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/CIGS_4-eps-convert
+ed-to.pdf figures/CIGS_4.eps>
+(epstopdf)             \includegraphics on input line 138.
+Package epstopdf Info: Output file is already uptodate.
 
+<figures/CIGS_4-eps-converted-to.pdf, id=210, 252.945pt x 298.11375pt>
+File: figures/CIGS_4-eps-converted-to.pdf Graphic file (type pdf)
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
+<use figures/CIGS_4-eps-converted-to.pdf>
+Package pdftex.def Info: figures/CIGS_4-eps-converted-to.pdf used on input line
+ 138.
+(pdftex.def)             Requested size: 119.80283pt x 141.1961pt.
+ [9
 
+ <./figures/APL1b.jpg> <./figures/CIGS_4-eps-converted-to.pdf>] (./phd-ppt-last
+.toc
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 103.
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
 
-(./phd-ppt-last.toc)
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10
 
 ]
-[11]
-Package epstopdf Info: Source file: <figures/kth.eps>
-(epstopdf)                    date: 2013-04-18 14:42:46
-(epstopdf)                    size: 752426 bytes
-(epstopdf)             Output file: <figures/kth-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-02-26 17:22:58
-(epstopdf)                    size: 71199 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/kth-eps-converted-
-to.pdf figures/kth.eps>
-(epstopdf)             \includegraphics on input line 135.
-Package epstopdf Info: Output file is already uptodate.
-File: figures/kth-eps-converted-to.pdf Graphic file (type pdf)
- <use figures/kth-eps-converted-to.pdf>
-Package pdftex.def Info: figures/kth-eps-converted-to.pdf used on input line 13
-5.
-(pdftex.def)             Requested size: 286.06805pt x 286.06805pt.
-
-Overfull \vbox (26.58806pt too high) detected at line 135
- []
-
-[12
-
-] [13
+[11] [12
 
 ]
-\tf@nav=\write6
-\openout6 = `phd-ppt-last.nav'.
+Package epstopdf Info: Source file: <figures/unitcell.eps>
+(epstopdf)                    date: 2014-10-24 17:14:26
+(epstopdf)                    size: 555568 bytes
+(epstopdf)             Output file: <figures/unitcell-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-02-28 22:56:33
+(epstopdf)                    size: 53165 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/unitcell-eps-conve
+rted-to.pdf figures/unitcell.eps>
+(epstopdf)             \includegraphics on input line 196.
+Package epstopdf Info: Output file is already uptodate.
 
-\tf@toc=\write7
-\openout7 = `phd-ppt-last.toc'.
+<figures/unitcell-eps-converted-to.pdf, id=269, 623.32875pt x 397.485pt>
+File: figures/unitcell-eps-converted-to.pdf Graphic file (type pdf)
 
-\tf@snm=\write8
-\openout8 = `phd-ppt-last.snm'.
+<use figures/unitcell-eps-converted-to.pdf>
+Package pdftex.def Info: figures/unitcell-eps-converted-to.pdf used on input li
+ne 196.
+(pdftex.def)             Requested size: 249.32707pt x 158.99118pt.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
+Overfull \vbox (6.18309pt too high) detected at line 196
+ []
+
+[13
+
+ <./figures/unitcell-eps-converted-to.pdf>] [14
+
+] [15
+
+] (./phd-ppt-last.toc
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16
+
+]
+[17]
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 293.
+
+
+Overfull \hbox (14.07153pt too wide) in paragraph at lines 293--293
+[]  
+ []
+
+
+Overfull \vbox (10.74753pt too high) detected at line 293
+ []
+
+[18
+
+]
+Package epstopdf Info: Source file: <figures/paper2figure1.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 105511 bytes
+(epstopdf)             Output file: <figures/paper2figure1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-03-01 15:19:16
+(epstopdf)                    size: 70044 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure1-eps-
+converted-to.pdf figures/paper2figure1.eps>
+(epstopdf)             \includegraphics on input line 315.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure1-eps-converted-to.pdf, id=344, 333.245pt x 494.84875pt>
+File: figures/paper2figure1-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/paper2figure1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure1-eps-converted-to.pdf used on inp
+ut line 315.
+(pdftex.def)             Requested size: 119.80283pt x 177.89624pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.315 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/paper2figure2.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 81822 bytes
+(epstopdf)             Output file: <figures/paper2figure2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-03-01 15:45:35
+(epstopdf)                    size: 51116 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure2-eps-
+converted-to.pdf figures/paper2figure2.eps>
+(epstopdf)             \includegraphics on input line 315.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure2-eps-converted-to.pdf, id=345, 340.27126pt x 492.84125pt>
+File: figures/paper2figure2-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/paper2figure2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure2-eps-converted-to.pdf used on inp
+ut line 315.
+(pdftex.def)             Requested size: 119.80283pt x 173.51974pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.315 \end{frame}
+                 
+Overfull \vbox (14.33813pt too high) detected at line 315
+ []
+
+[19
+
+ <./figures/paper2figure1-eps-converted-to.pdf> <./figures/paper2figure2-eps-co
+nverted-to.pdf>]
+Package epstopdf Info: Source file: <figures/paper1figure3.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 174659 bytes
+(epstopdf)             Output file: <figures/paper1figure3-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-03-01 11:07:31
+(epstopdf)                    size: 114186 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper1figure3-eps-
+converted-to.pdf figures/paper1figure3.eps>
+(epstopdf)             \includegraphics on input line 337.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper1figure3-eps-converted-to.pdf, id=377, 333.245pt x 492.84125pt>
+File: figures/paper1figure3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/paper1figure3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper1figure3-eps-converted-to.pdf used on inp
+ut line 337.
+(pdftex.def)             Requested size: 119.80283pt x 177.17455pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.337 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/fermi_sphere_cii.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 13035149 bytes
+(epstopdf)             Output file: <figures/fermi_sphere_cii-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2015-03-01 11:07:35
+(epstopdf)                    size: 222543 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/fermi_sphere_cii-e
+ps-converted-to.pdf figures/fermi_sphere_cii.eps>
+(epstopdf)             \includegraphics on input line 337.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/fermi_sphere_cii-eps-converted-to.pdf, id=378, 546.04pt x 842.14626pt>
+File: figures/fermi_sphere_cii-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/fermi_sphere_cii-eps-converted-to.pdf>
+Package pdftex.def Info: figures/fermi_sphere_cii-eps-converted-to.pdf used on 
+input line 337.
+(pdftex.def)             Requested size: 119.80283pt x 184.77159pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.337 \end{frame}
+                 
+Overfull \vbox (13.61644pt too high) detected at line 337
+ []
+
+[20
+
+ <./figures/paper1figure3-eps-converted-to.pdf> <./figures/fermi_sphere_cii-eps
+-converted-to.pdf>] [21
+
+]
+Package epstopdf Info: Source file: <figures/paper2figure4.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 122389 bytes
+(epstopdf)             Output file: <figures/paper2figure4-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-03-01 11:16:19
+(epstopdf)                    size: 64728 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure4-eps-
+converted-to.pdf figures/paper2figure4.eps>
+(epstopdf)             \includegraphics on input line 381.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure4-eps-converted-to.pdf, id=422, 389.455pt x 545.03625pt>
+File: figures/paper2figure4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/paper2figure4-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure4-eps-converted-to.pdf used on inp
+ut line 381.
+(pdftex.def)             Requested size: 119.80283pt x 167.66211pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.381 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/paper2figure6.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 112671 bytes
+(epstopdf)             Output file: <figures/paper2figure6-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-03-01 11:16:19
+(epstopdf)                    size: 57988 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure6-eps-
+converted-to.pdf figures/paper2figure6.eps>
+(epstopdf)             \includegraphics on input line 381.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure6-eps-converted-to.pdf, id=423, 391.4625pt x 567.11874pt>
+File: figures/paper2figure6-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/paper2figure6-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure6-eps-converted-to.pdf used on inp
+ut line 381.
+(pdftex.def)             Requested size: 119.80283pt x 173.55507pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.381 \end{frame}
+                 
+Overfull \vbox (13.604pt too high) detected at line 381
+ []
+
+[22
+
+ <./figures/paper2figure4-eps-converted-to.pdf> <./figures/paper2figure6-eps-co
+nverted-to.pdf>]
+Package epstopdf Info: Source file: <figures/paper2figure7a.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 32230 bytes
+(epstopdf)             Output file: <figures/paper2figure7a-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-03-01 11:19:18
+(epstopdf)                    size: 22318 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure7a-eps
+-converted-to.pdf figures/paper2figure7a.eps>
+(epstopdf)             \includegraphics on input line 404.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure7a-eps-converted-to.pdf, id=457, 527.9725pt x 533.995pt>
+File: figures/paper2figure7a-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/paper2figure7a-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure7a-eps-converted-to.pdf used on in
+put line 404.
+(pdftex.def)             Requested size: 119.80283pt x 121.1622pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.404 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/paper2figure7b.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 59220 bytes
+(epstopdf)             Output file: <figures/paper2figure7b-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2015-03-01 11:19:19
+(epstopdf)                    size: 37977 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure7b-eps
+-converted-to.pdf figures/paper2figure7b.eps>
+(epstopdf)             \includegraphics on input line 404.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure7b-eps-converted-to.pdf, id=458, 516.93124pt x 532.99126pt
+>
+File: figures/paper2figure7b-eps-converted-to.pdf Graphic file (type pdf)
+ <use figures/paper2figure7b-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure7b-eps-converted-to.pdf used on in
+put line 404.
+(pdftex.def)             Requested size: 119.80283pt x 123.52068pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.404 \end{frame}
+                 
+Overfull \vbox (4.1041pt too high) detected at line 404
+ []
+
+[23
+
+ <./figures/paper2figure7a-eps-converted-to.pdf> <./figures/paper2figure7b-eps-
+converted-to.pdf>]
+\openout4 = `phd-ppt-last.vrb'.
+
+ (./phd-ppt-last.vrb Excluding 'comment' comment.
+Package epstopdf Info: Source file: <figures/paper2figure9.eps>
+(epstopdf)                    date: 2014-09-25 15:56:44
+(epstopdf)                    size: 234346 bytes
+(epstopdf)             Output file: <figures/paper2figure9-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2015-03-01 16:43:42
+(epstopdf)                    size: 108842 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/paper2figure9-eps-
+converted-to.pdf figures/paper2figure9.eps>
+(epstopdf)             \includegraphics on input line 25.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/paper2figure9-eps-converted-to.pdf, id=480, 586.19pt x 284.06125pt>
+File: figures/paper2figure9-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/paper2figure9-eps-converted-to.pdf>
+Package pdftex.def Info: figures/paper2figure9-eps-converted-to.pdf used on inp
+ut line 25.
+(pdftex.def)             Requested size: 239.60567pt x 116.11043pt.
+) [24
+
+ <./figures/paper2figure9-eps-converted-to.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\mathsurround' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\z@' on input line 441.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 441.
+
+File: figures/APL1b.jpg Graphic file (type jpg)
+<use figures/APL1b.jpg>
+Package pdftex.def Info: figures/APL1b.jpg used on input line 464.
+(pdftex.def)             Requested size: 119.80283pt x 108.01118pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.464 \end{frame}
+                  <figures/APL1a.jpg, id=494, 446.50815pt x 441.44925pt>
+File: figures/APL1a.jpg Graphic file (type jpg)
+
+<use figures/APL1a.jpg>
+Package pdftex.def Info: figures/APL1a.jpg used on input line 464.
+(pdftex.def)             Requested size: 119.80283pt x 118.44519pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.464 \end{frame}
+                  [25
+
+ <./figures/APL1a.jpg>]
+Package epstopdf Info: Source file: <figures/APL4.eps>
+(epstopdf)                    date: 2014-11-06 17:29:09
+(epstopdf)                    size: 11596660 bytes
+(epstopdf)             Output file: <figures/APL4-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-01 11:28:25
+(epstopdf)                    size: 229598 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/APL4-eps-converted
+-to.pdf figures/APL4.eps>
+(epstopdf)             \includegraphics on input line 485.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/APL4-eps-converted-to.pdf, id=501, 343.2825pt x 394.47375pt>
+File: figures/APL4-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/APL4-eps-converted-to.pdf>
+Package pdftex.def Info: figures/APL4-eps-converted-to.pdf used on input line 4
+85.
+(pdftex.def)             Requested size: 136.91862pt x 157.33525pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test1}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.485 \end{frame}
+                 
+Package epstopdf Info: Source file: <figures/APL3.eps>
+(epstopdf)                    date: 2014-11-06 17:32:16
+(epstopdf)                    size: 10923952 bytes
+(epstopdf)             Output file: <figures/APL3-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-01 11:28:21
+(epstopdf)                    size: 158593 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/APL3-eps-converted
+-to.pdf figures/APL3.eps>
+(epstopdf)             \includegraphics on input line 485.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/APL3-eps-converted-to.pdf, id=502, 415.5525pt x 249.93375pt>
+File: figures/APL3-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/APL3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/APL3-eps-converted-to.pdf used on input line 4
+85.
+(pdftex.def)             Requested size: 171.14764pt x 102.93495pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:test2}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.485 \end{frame}
+                 
+Overfull \vbox (11.77715pt too high) detected at line 485
+ []
+
+[26
+
+ <./figures/APL4-eps-converted-to.pdf> <./figures/APL3-eps-converted-to.pdf>] (
+./phd-ppt-last.toc
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27
+
+]
+[28] (./phd-ppt-last.toc
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
+Package epstopdf Info: Source file: <figures/price.eps>
+(epstopdf)                    date: 2014-10-24 17:14:25
+(epstopdf)                    size: 286286 bytes
+(epstopdf)             Output file: <figures/price-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-03-01 17:18:15
+(epstopdf)                    size: 19739 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/price-eps-converte
+d-to.pdf figures/price.eps>
+(epstopdf)             \includegraphics on input line 531.
+Package epstopdf Info: Output file is already uptodate.
+ <figures/price-eps-converted-to.pdf, id=564, 379.4175pt x 234.8775pt>
+File: figures/price-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/price-eps-converted-to.pdf>
+Package pdftex.def Info: figures/price-eps-converted-to.pdf used on input line 
+531.
+(pdftex.def)             Requested size: 160.19762pt x 99.17113pt.
+
+Overfull \vbox (5.65189pt too high) detected at line 531
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29
+
+]
+[30 <./figures/price-eps-converted-to.pdf>] (./phd-ppt-last.toc
+
+! Package babel Error: Unknown language `english'. Either you have
+(babel)                misspelled its name, it has not been installed,
+(babel)                or you requested it in a previous run. Fix its name,
+(babel)                install it or just rerun the file, respectively.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \select@language {english}
+                              
+You may proceed, but expect unexpected results
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31
+
+]
+[32] Excluding 'comment' comment. [33
+
+]
+\tf@nav=\write7
+\openout7 = `phd-ppt-last.nav'.
+
+\tf@toc=\write8
+\openout8 = `phd-ppt-last.toc'.
+
+\tf@snm=\write9
+\openout9 = `phd-ppt-last.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 582.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 582.
  (./phd-ppt-last.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 582.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 582.
 Package rerunfilecheck Info: File `phd-ppt-last.out' has not changed.
-(rerunfilecheck)             Checksum: 2180379360D3A58CB90D9587D313B33C;223.
+(rerunfilecheck)             Checksum: D3569E000D507E1ACE9E3E84A5338713;515.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 582.
  ) 
 Here is how much of TeX's memory you used:
- 18426 strings out of 494989
- 347467 string characters out of 6180577
- 420178 words of memory out of 5000000
- 21145 multiletter control sequences out of 15000+600000
- 15799 words of font info for 60 fonts, out of 8000000 for 9000
+ 21744 strings out of 494989
+ 429121 string characters out of 6180577
+ 537554 words of memory out of 5000000
+ 24324 multiletter control sequences out of 15000+600000
+ 16444 words of font info for 62 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 49i,16n,62p,422b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,24n,62p,550b,809s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmssi17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb>
-Output written on phd-ppt-last.pdf (13 pages, 1209481 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on phd-ppt-last.pdf (33 pages, 5680084 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 699 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

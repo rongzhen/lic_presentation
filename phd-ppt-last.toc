@@ -1,5 +1,10 @@
 \beamer@endinputifotherversion {3.24pt}
 \beamer@sectionintoc {1}{Background}{3}{0}{1}
 \beamer@sectionintoc {2}{Motivation}{6}{0}{2}
-\beamer@sectionintoc {3}{$Ab$ $initio$ alloy theory}{10}{0}{3}
-\beamer@subsectionintoc {3}{1}{Density functional theory }{10}{0}{3}
+\beamer@sectionintoc {3}{Computational methods}{10}{0}{3}
+\beamer@sectionintoc {4}{Results}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Parameterization of energy bands for CIGS}{16}{0}{4}
+\beamer@subsectionintoc {4}{2}{Dielectric function for CuIn\textsubscript {0.5}Ga\textsubscript {0.5}Se\textsubscript {2}}{25}{0}{4}
+\beamer@sectionintoc {5}{Summary}{27}{0}{5}
+\beamer@sectionintoc {6}{Future perspectives}{29}{0}{6}
+\beamer@sectionintoc {7}{Acknowledgements}{31}{0}{7}
