@@ -1,0 +1,30 @@
+\frametitle{Result 1: Carrier concentration in $p$-type for CIGS}
+
+
+  \captionsetup{width=1\linewidth}
+
+  \begin{comment}
+\begin{figure}
+\begin{minipage}[c][200cm][t]{0.7\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{figures/paper2figure8.eps}
+  \caption{\scriptsize{Fermi level as function of the temperature $20 \leq T \leq 600$ of $p$-type CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} for the effective
+    doping concentration $N_A$ = $10^{13}$, $10^{14}$, $10^{15}$, $\cdot$, and $10^{19}$ acceptors cm\textsuperscript{$-$3}. Dashed lines represent the VBM with respect to the intrinsic Fermi level. Solid and dotted lines represents the fbp and the pba, respectively.}}
+  \label{fig:test2}
+  \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
+  \caption{test figure three}
+  \label{fig:test3}
+\end{minipage}
+\end{figure}
+\end{comment}
+
+\begin{figure}
+
+  \centering
+
+  \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
+  \caption{\scriptsize{Free carrier concentration as function of the temperature in $p$-type for $\mathrm{CuInSe_2}$, $\mathrm{CuIn_{0.5}Ga_{0.5}Se_2}$, and $\mathrm{CuGaSe_2}$.
+    The effective doping concentration $N_A = 10^{13}, 10^{14}, 10^{15}$,..., and  $10^{19}$ acceptors cm\textsuperscript{$-$3} are considered.}}
+
+\end{figure}
+
