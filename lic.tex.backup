@@ -220,7 +220,7 @@ V(\textbf{r}) =
 \end{cases}
 \end{equation}
 
-Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$
+Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by electron density.
 \end{frame}
 
 
@@ -242,16 +242,16 @@ Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$
     \node [block] (init) {Initial guess of $\rho(\textbf{r})$ and atom configuration};
     \node [block, below of=init] (potential) {Calculate potential $V^{KS}(\textbf{r})$ by guessed/calculated electron density};
     \node [block, below of=potential, node distance=2.5cm] (KS) {Solve Kohn-Sham equation};
-    \node [block, below of=KS, node distance=2.5cm] (fermi) {Calculate Fermi energy $E_F$};
-    \node [block, below of=fermi, node distance=2.5cm] (density) {Calculate new density $\rho^{new}(\textbf{r})$};
-    \node [block, left of=fermi, node distance=6cm] (update) {Determine the mix density $\rho^{i+1}(\textbf{r}) = F (\rho^{i}(\textbf{r}), \rho^{new}(\textbf{r})) $};
+ %   \node [block, below of=KS, node distance=2.5cm] (fermi) {Calculate Fermi energy $E_F$};
+    \node [block, below of=KS, node distance=2.5cm] (density) {Calculate new density $\rho^{new}(\textbf{r})$};
+    \node [block, left of=KS, node distance=6cm] (update) {Determine the mix density $\rho^{i+1}(\textbf{r}) = F (\rho^{i}(\textbf{r}), \rho^{new}(\textbf{r})) $};
     \node [decision, below of=density, node distance=3.8cm] (converge) {$E[\rho]$ Converged? \\ $\rho(\textbf{r})$ == $\rho^{new}(\textbf{r})$?};
     \node [block, below of=converge, node distance=3.8cm] (done) {Finished};
     % Draw edges
     \path [line] (init) -- (potential);
     \path [line] (potential) -- (KS);
-    \path [line] (KS) -- (fermi);
-    \path [line] (fermi) -- (density);
+    \path [line] (KS) -- (density);
+ %   \path [line] (fermi) -- (density);
     \path [line] (density) -- (converge);
     \path [line] (converge) -| node [pos=0.2, above, color=black] {No} (update);
     \path [line] (update) |- (potential);
@@ -270,12 +270,15 @@ Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$
 
 \begin{frame}
 \frametitle{Result 1: Parabolic band approximation (pba)}
+The parabolic approximation of ellipsoidal energy bands is expressed
 \begin{equation}
 \begin{split}
 & E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{\perp}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{\parallel}} \right] \\
 & \widetilde{\textbf{k}}_{\alpha}^{2} = \frac{\hbar^2 {\textbf{k}}_{\alpha}^{2}}{2e}, \textrm{where}\  \alpha = x, y, \textrm{and}\  z.
 \end{split}
 \end{equation}
+
+It is valid in the very vicinity of the $\Gamma$-point. However, away from the $\Gamma$-point, the parabolic approximation fails to describe the energy dispersion for the CIGS.
 \end{frame}
 
 
@@ -430,7 +433,7 @@ is defined as
 
   \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
   \caption{\scriptsize{Free carrier concentration as function of the temperature in $p$-type for $\mathrm{CuInSe_2}$, $\mathrm{CuIn_{0.5}Ga_{0.5}Se_2}$, and $\mathrm{CuGaSe_2}$.
-    The effective doping concentration $N_A = 10^{13}, 10^{14}, 10^{15}$,..., and  $10^{19}$ acceptors cm\textsuperscript{$-$3} are considered.}}
+    The effective doping concentration $N_A = 10^{13}, 10^{14}, 10^{15}$,..., and  $10^{19}$ acceptors cm\textsuperscript{$-$3} are considered. Solid and dotted lines represents the fbp and the pba, respectively.}}
 
 \end{figure}
   
