@@ -163,11 +163,14 @@ This problem in DFT is solved by KS equation:
 \end{split}
 \end{equation}
 
-The KS equation is derived as 
+The KS equation in \textbf{k}-space is derived as 
 
-\begin{equation}\label{aaa}
- \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i}}(\textbf{r}) = \epsilon^{{KS}}_{{i}} \Psi^{{KS}}_{{i}}(\textbf{r}).
+
+\begin{equation}\label{aaa111}
+ \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i,k}}(\textbf{r}) = \epsilon^{{KS}}_{{i,k}} \Psi^{{KS}}_{{i,k}}(\textbf{r}).
 \end{equation}
+
+
 
 The $V^{KS}(\textbf{r})$ is give as
 
@@ -237,7 +240,7 @@ Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by 
 
 \begin{figure}[H]
 \centering
-\begin{tikzpicture}[scale=0.3 , node distance = 2.5cm,transform shape]
+\begin{tikzpicture}[scale=0.4 , node distance = 2.5cm,transform shape]
     % Place nodes
     \node [block] (init) {Initial guess of $\rho(\textbf{r})$ and atom configuration};
     \node [block, below of=init] (potential) {Calculate potential $V^{KS}(\textbf{r})$ by guessed/calculated electron density};
