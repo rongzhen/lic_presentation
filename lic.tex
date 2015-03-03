@@ -110,7 +110,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
  \item Electronic structure
  \begin{itemize}
   \item Energy bands of CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} are calculated by means of theoretical calculations. Parameterization of the
-  lowest conduction (CB) and the three uppermost valence bands (VBs) are expored based on the calculated energy bands. 
+  lowest conduction (CB) and the three uppermost valence bands (VBs) are explored based on the calculated energy bands. 
   
   \item Analysis of density-of-states (DOS) and carrier concentration based on the parameterization.
 \end{itemize}
@@ -140,7 +140,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 
  \item Better analyze the impact on DOS as well as carrier concentration taking into account the non-parabolicity of the energy bands.
   \item Help experimentalists to reproduce DOS from energy-dependent DOS mass.
-  \item DOS and carrier concentration obtailed by full band parameterization and parabolic band approximation are compared. 
+  \item DOS and carrier concentration obtained by full band parameterization and parabolic band approximation are compared. 
  \end{itemize}
 \end{frame}
 
@@ -180,7 +180,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \frametitle{Density functional theory (DFT)}
 %\begin{columns}[c]
 %\column{2in}
-DFT-based modelling is extremely successful in many-body systems.
+DFT-based modeling is extremely successful in many-body systems.
 
 \begin{itemize}
  \item DFT was introduced by Hohenberg and Kohn in 1964. Kohn and Pople were awarded Chemistry Nobel Prize in 1998. 
@@ -231,30 +231,74 @@ Here
 \end{center}
 
 In our calculations, we took the GGA+U (d-states), which was proved to improve the effective mass, that is curvature of energy band.
+???? explain LDA GGA ....
 \end{frame}
 
 
 
 
 \section{Results}
-\subsection{Parameterization of energy bands for CIGS}
+\subsection{Paper 1: parameterization of energy bands for CIGS}
 
 \begin{frame}
-\frametitle{Result 1: Parabolic band approximation (pba)}
+\frametitle{Paper 1: parabolic band approximation (pba)}
 The parabolic approximation of ellipsoidal energy bands is expressed
 \begin{equation}
 \begin{split}
-& E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{\perp}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{\parallel}} \right] \\
-& \widetilde{\textbf{k}}_{\alpha}^{2} = \frac{\hbar^2 {\textbf{k}}_{\alpha}^{2}}{2e}, \textrm{where}\  \alpha = x, y, \textrm{and}\  z.
+& E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{xy}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{z}} \right] \\
+&  m^{ab} = \pm \hbar^2 / (\partial E(\textbf{k}) / \partial{k_a}{{k_b}}).
 \end{split}
 \end{equation}
 
-It is valid in the very vicinity of the $\Gamma$-point. However, away from the $\Gamma$-point, the parabolic approximation fails to describe the energy dispersion for the CIGS.
+In the case of ideal parabolic energy band, the pba can describe energy band perfectly.
+
+    \begin{center}
+\includegraphics[height=0.4\textwidth]{figures/parabolic_1.eps}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Paper 1: parabolic band approximation (pba)}
+The parabolic approximation of ellipsoidal energy bands is expressed
+\begin{equation}
+\begin{split}
+& E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{xy}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{z}} \right] \\
+&  m^{ab} = \pm \hbar^2 / (\partial E(\textbf{k}) / \partial{k_a}{{k_b}}).
+\end{split}
+\end{equation}
+
+The parabolic approximation is valid in the vicinity of the $\Gamma$-point. However, away from the $\Gamma$-point, it fails to describe the energy dispersion.
+
+    \begin{center}
+\includegraphics[height=0.4\textwidth]{figures/parabolic_2.eps}
+\end{center}
+
 \end{frame}
 
 
 \begin{frame}
- \frametitle{Result 1: Full band parameterization (fbp)}
+\frametitle{Paper 1: parabolic band approximation (pba)}
+The parabolic approximation of ellipsoidal energy bands is expressed
+\begin{equation}
+\begin{split}
+& E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{xy}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{z}} \right] \\
+&  m^{ab} = \pm \hbar^2 / (\partial E(\textbf{k}) / \partial{k_a}{{k_b}}).
+\end{split}
+\end{equation}
+
+Considering spin-orbit coupling and crystal-field split, the energy band becomes very complicated. The parabolic approximation is valid in the very vicinity of the $\Gamma$-point.
+
+    \begin{center}
+\includegraphics[height=0.35\textwidth]{figures/parabolic_3.eps}
+\end{center}
+
+\end{frame}
+
+
+
+\begin{frame}
+ \frametitle{Paper 1: Full band parameterization (fbp)}
 \begin{equation}
 \begin{split}
 & \small E_j(\textbf{k}) = E_{j}^{pb}(\textbf{k}) + E_j^0 + \Delta_{j,1} \left( \delta_{j,1}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{4}+\widetilde{ \textbf{k}}_{y}^{4}}{m_{0}^{2}} \right) + \delta_{j,2}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{2}}{m_{0}^2} \right) + 1 \right)^{1/2} \\
@@ -268,20 +312,20 @@ It is valid in the very vicinity of the $\Gamma$-point. However, away from the $
 
 
 \begin{frame}
- \frametitle{Result 1: Parameterization of band structure for CIGS}
+ \frametitle{Paper 1: Parameterization of band structure for CIGS}
   \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.7\linewidth]{figures/paper2figure1.eps}
-  \captionof{figure}{\scriptsize{ Electronic band structure along four directions. The circles are the results of the fbp, and the dotted lines represent the pba.}}
+  \captionof{figure}{\scriptsize{ Electronic band structure along four directions. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 
   \centering
-  \includegraphics[width=.7\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\scriptsize{Close-up of rigth figure.}}
+  \includegraphics[width=.8\linewidth]{figures/copyfigure2_paper2.eps}
+  \captionof{figure}{\scriptsize{Close-up of the right figure.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -290,15 +334,37 @@ It is valid in the very vicinity of the $\Gamma$-point. However, away from the $
 
 
 \begin{frame}
-  \frametitle{Result 1: Non-parabolicity of the energy bands}
+  \frametitle{Paper 1: Non-parabolicity of the energy bands}
 
   
   \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
+  \includegraphics[width=.7\linewidth]{figures/copyfigure2_paper2.eps}
+  \captionof{figure}{\scriptsize{Close-up of electronic band structure. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
   \includegraphics[width=.7\linewidth]{figures/paper1figure3.eps}
-  \captionof{figure}{\scriptsize{Inverse of the effective electron and hole masses in the four symmetry directions for the {CuIn\textsubscript{1-\textit{x}}Ga\textsubscript{\textit{x}}Se\textsubscript{2}} ($x$ = 0, 0.5, and 1).}}
+    \captionof{figure}{\scriptsize{Inverse of the effective electron and hole masses in the four symmetry directions for the {CuIn\textsubscript{1-\textit{x}}Ga\textsubscript{\textit{x}}Se\textsubscript{2}} ($x$ = 0, 0.5, and 1).}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Paper 1: Non-parabolicity of the energy bands}
+
+  
+  \begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{figures/copyfigure2_paper2.eps}
+  \captionof{figure}{\scriptsize{Close-up of electronic band structure. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
@@ -312,22 +378,18 @@ It is valid in the very vicinity of the $\Gamma$-point. However, away from the $
 
 
 
-
-
-
-\subsection{Analysis of density-of-states (DOS) and carrier concentration}
+\subsection{Paper 2: analysis of density-of-states (DOS) and carrier concentration}
 
 \begin{frame}
-   \frametitle{Result 1: Density-of-states (DOS)}
+   \frametitle{Paper 2: Density-of-states (DOS)}
 In the case of the pba, the density-of-states can be written as
 
 \begin{equation}\label{dosjp}
  g_j^{pba}(E) = \frac{1}{2\pi^2} \big(\frac{2m_j^{DOS}}{\hbar^2}\big)^{3/2} \sqrt{|E-E_j(\textbf{0})|}.
 \end{equation}
  
-Here, the DOS mass $m_j^{DOS}$ is equal to $\big( m_j^{\perp}m_j^{\perp}m_j^{\parallel} \big)^{1/3}$, which represents the extent of filling the specific band with free carriers to certain energy. 
-In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-parabolic energy bands, the energy-dependent DOS mass ($m_{v/c}^{DOS}$), which contains the non-parabolicity and anisotropy of the band dispersion, 
-is defined as
+
+In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-parabolic energy bands, the energy-dependent DOS mass ($m_{v/c}^{DOS}$) is defined as
 
 \begin{equation}\label{dosmass}
  g_{v/c}(E) = \sum\limits_j g_j(E) = \frac{1}{2\pi^2} \big(\frac{2m_{v/c}^{DOS}(E)}{\hbar^2}\big)^{3/2} \sqrt{|E-E_{v1/c1}(\textbf{0})|}.
@@ -337,20 +399,19 @@ is defined as
 
 
 \begin{frame}
-  \frametitle{Result 1: Density-of-states (DOS) and DOS mass}
+  \frametitle{Paper 2: Density-of-states (DOS) and DOS mass}
  \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.7\linewidth]{figures/paper2figure4.eps}
-  \captionof{figure}{\scriptsize{Total density-of-states of the VBs and CB. The solid lines show the results based on the fbp, and the dashed lines represent the results based on the pba.}}
+  \captionof{figure}{\scriptsize{Total DOS of the VBs and CB. The solid lines show the results based on the fbp, and the dashed lines represent the results based on the pba.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.7\linewidth]{figures/paper2figure6.eps}
-  \captionof{figure}{\scriptsize{The DOS mass $m_{v/c}^{DOS}$ is 
-    calculated from \textbf{Eq. \ref{dosmass}}.}}
+  \captionof{figure}{\scriptsize{The DOS mass $m_{v/c}^{DOS}$ }}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -361,48 +422,37 @@ is defined as
 \end{frame}
 
 \begin{frame}
-  \frametitle{Result 1: Band-gap, Fermi energy and intrinsic carrier concentration}
+  \frametitle{Paper 2: intrinsic carrier concentration}
   
+   \captionsetup{width=1\linewidth}
  \begin{figure}
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure7a.eps}
-  \caption{\scriptsize{Band-gap energy and Fermi energy for $1 \leq T \leq 900$ K of intrinsic CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2},
-    determined from the fbp. The Fermi distribution $f(E)$ of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} is presented for T = 300 K and 600 K}.}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure7b.eps}
-  \captionof{figure}{\scriptsize{Intrinsic carrier concentration as function of temperature. For comparison, the theoretical results for GaAs and Si using the pba are given.}}
-  \label{fig:test2}
-\end{minipage}
-\end{figure}
 
+  \centering
+  \includegraphics[width=.5\linewidth]{figures/paper2figure7b.eps}
+  \captionof{figure}{\scriptsize{Intrinsic carrier concentration as function of temperature. For comparison, the theoretical results for GaAs and Si using the pba are given.}}
+\end{figure}
+ \captionsetup{width=0.4\linewidth}
   
 \end{frame}
 
-\begin{frame}[fragile] 
-  \frametitle{Result 1: Carrier concentration in $p$-type for CIGS}
+
+\begin{frame} 
+  \frametitle{Paper 2: Carrier concentration in different temperatures}
+  
+  
+  
+  
+  \end{frame}
+  
+
+
+\begin{frame} 
+  \frametitle{Paper 2: Carrier concentration in $p$-type for CIGS}
 
   
   \captionsetup{width=1\linewidth}
   
-  \begin{comment}
-\begin{figure}
-\begin{minipage}[c][200cm][t]{0.7\textwidth}
-  \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure8.eps}
-  \caption{\scriptsize{Fermi level as function of the temperature $20 \leq T \leq 600$ of $p$-type CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} for the effective
-    doping concentration $N_A$ = $10^{13}$, $10^{14}$, $10^{15}$, $\cdot$, and $10^{19}$ acceptors cm\textsuperscript{$-$3}. Dashed lines represent the VBM with respect to the intrinsic Fermi level. Solid and dotted lines represents the fbp and the pba, respectively.}}
-  \label{fig:test2}
-  \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
-  \caption{test figure three}
-  \label{fig:test3}
-\end{minipage}
-\end{figure}
-\end{comment}
+
 
 \begin{figure}
 
@@ -416,10 +466,10 @@ is defined as
   
 \end{frame}
 
-\subsection{Dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
+\subsection{Paper 3: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
 
 \begin{frame}
-  \frametitle{Result 2: Dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
+  \frametitle{Paper 3: Dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
 
    \begin{figure}
 \centering
@@ -448,7 +498,7 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 \captionsetup{width=1\linewidth}
 \begin{figure}
   \includegraphics[width=.5\linewidth]{figures/APL2.eps}
-  \caption{\scriptsize{Energies of each interband critial point (CP) are indicated by arrows and labeled in a numeric and alphabetic order.}}
+  \caption{\scriptsize{Energies of each interband critical point (CP) are indicated by arrows and labeled in a numeric and alphabetic order.}}
 \end{figure}
 \captionsetup{width=1\linewidth}
 
@@ -457,7 +507,7 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 
 
 \begin{frame}
-  \frametitle{Result 2: Analysis of the imaginary part of dielectric function}
+  \frametitle{Paper 3: Analysis of the imaginary part of dielectric function}
 
      \begin{figure}
 \centering
@@ -657,6 +707,38 @@ Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by 
 \end{figure}
 \captionsetup{width=0.4\linewidth}
 \end{frame}
+
+
+ \begin{figure}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{figures/paper2figure7a.eps}
+  \caption{\scriptsize{Band-gap energy and Fermi energy for $1 \leq T \leq 900$ K of intrinsic CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2},
+    determined from the fbp. The Fermi distribution $f(E)$ of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} is presented for T = 300 K and 600 K}.}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{figures/paper2figure7b.eps}
+  \captionof{figure}{\scriptsize{Intrinsic carrier concentration as function of temperature. For comparison, the theoretical results for GaAs and Si using the pba are given.}}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+
+
+\begin{figure}
+\begin{minipage}[c][200cm][t]{0.7\textwidth}
+  \centering
+  \includegraphics[width=.7\linewidth]{figures/paper2figure8.eps}
+  \caption{\scriptsize{Fermi level as function of the temperature $20 \leq T \leq 600$ of $p$-type CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} for the effective
+    doping concentration $N_A$ = $10^{13}$, $10^{14}$, $10^{15}$, $\cdot$, and $10^{19}$ acceptors cm\textsuperscript{$-$3}. Dashed lines represent the VBM with respect to the intrinsic Fermi level. Solid and dotted lines represents the fbp and the pba, respectively.}}
+  \label{fig:test2}
+  \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
+  \caption{test figure three}
+  \label{fig:test3}
+\end{minipage}
+\end{figure}
 
 
 \end{document}
