@@ -78,7 +78,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
 \frametitle{Which field and material am I working on?}
 \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/CIGS_1.eps}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_1.eps}
 \end{center}
 \end{frame}
 
@@ -87,30 +87,68 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
 \frametitle{Why Cu(In,Ga)Se\textsubscript{2}?}
 \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/CIGS_2.eps}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_2.eps}
 \end{center}
 \end{frame}
+
+
+
+\begin{frame}
+\frametitle{Where does Cu(In,Ga)Se\textsubscript{2} come from?}
+\begin{center}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_3.eps}
+\end{center}
+\end{frame}
+
 
 
 \section{Motivation}
 \begin{frame}
  \frametitle{Which aspects of Cu(In,Ga)Se\textsubscript{2} have I been working on?}
+ 
+  \begin{itemize}
+ \item Electronic structure
  \begin{itemize}
   \item Energy bands of CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} are calculated by means of theoretical calculations. Parameterization of the
-  lowest conduction (CB) and the three uppermost valence bands (VBs) are expored based on the calculated energy bands. Carrier concentration, Fermi level, and many other aspects are analyzed based on the parameterization.
-  \item Optical properties of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} are explored by means of theoretical calculations.
+  lowest conduction (CB) and the three uppermost valence bands (VBs) are expored based on the calculated energy bands. 
+  
+  \item Analysis of density-of-states (DOS) and carrier concentration based on the parameterization.
 \end{itemize}
+
+
+  \item Optical properties
+   \begin{itemize}
+   \item Dielectric function of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} are explored by means of theoretical calculations. The band-to-band optical transitions are analyzed. 
+   The electronic origins of the observed interband critical points of the optical response are discussed.
+    \end{itemize}
+    
+    
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Motivation for the parameterization}
   \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/CIGS_3.eps}
+\includegraphics[height=0.65\textwidth]{figures/motivation1.eps}
 \end{center}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Motivation for calculation of optical properties}
+  \frametitle{Motivation for analysis of DOS and carrier concentration }
+  
+  \begin{itemize}
+
+ \item Better analyze the impact on DOS as well as carrier concentration taking into account the non-parabolicity of the energy bands.
+  \item Help experimentalists to reproduce DOS from energy-dependent DOS mass.
+  \item DOS and carrier concentration obtailed by full band parameterization and parabolic band approximation are compared. 
+ \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Motivation for calculation of dielectric function}
+  Absorption coefficient can be calculated by dielectric function directly, and thickness of material is determined by the absorption coefficient. 
   \begin{itemize}
   \item Help experimentalists to understand the dielectric function spectrum.
   \item Understand details in the optical transition for these types of materials.
@@ -163,11 +201,14 @@ This problem in DFT is solved by KS equation:
 \end{split}
 \end{equation}
 
-The KS equation is derived as 
+The KS equation in \textbf{k}-space is derived as 
 
-\begin{equation}\label{aaa}
- \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i}}(\textbf{r}) = \epsilon^{{KS}}_{{i}} \Psi^{{KS}}_{{i}}(\textbf{r}).
+
+\begin{equation}\label{aaa111}
+ \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i,k}}(\textbf{r}) = \epsilon^{{KS}}_{{i,k}} \Psi^{{KS}}_{{i,k}}(\textbf{r}).
 \end{equation}
+
+
 
 The $V^{KS}(\textbf{r})$ is give as
 
@@ -237,7 +278,7 @@ Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by 
 
 \begin{figure}[H]
 \centering
-\begin{tikzpicture}[scale=0.3 , node distance = 2.5cm,transform shape]
+\begin{tikzpicture}[scale=0.4 , node distance = 2.5cm,transform shape]
     % Place nodes
     \node [block] (init) {Initial guess of $\rho(\textbf{r})$ and atom configuration};
     \node [block, below of=init] (potential) {Calculate potential $V^{KS}(\textbf{r})$ by guessed/calculated electron density};
@@ -464,6 +505,20 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 \end{minipage}
 \end{figure}
   
+\end{frame}
+
+
+
+\begin{frame}
+\centering
+\captionsetup{width=1\linewidth}
+\begin{figure}
+  \includegraphics[width=.5\linewidth]{figures/APL2.eps}
+  \caption{\scriptsize{Energies of each interband critial point (CP) are indicated by arrows and labeled in a numeric and alphabetic order.}}
+\end{figure}
+\captionsetup{width=1\linewidth}
+
+
 \end{frame}
 
 

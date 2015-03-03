@@ -1,10 +1,11 @@
 \beamer@endinputifotherversion {3.24pt}
 \beamer@sectionintoc {1}{Background}{3}{0}{1}
-\beamer@sectionintoc {2}{Motivation}{6}{0}{2}
-\beamer@sectionintoc {3}{Computational methods}{10}{0}{3}
+\beamer@sectionintoc {2}{Motivation}{7}{0}{2}
+\beamer@sectionintoc {3}{Computational methods}{12}{0}{3}
 \beamer@sectionintoc {4}{Results}{16}{0}{4}
 \beamer@subsectionintoc {4}{1}{Parameterization of energy bands for CIGS}{16}{0}{4}
-\beamer@subsectionintoc {4}{2}{Dielectric function for CuIn\textsubscript {0.5}Ga\textsubscript {0.5}Se\textsubscript {2}}{25}{0}{4}
+\beamer@subsectionintoc {4}{2}{Analysis of density-of-states (DOS) and carrier concentration}{21}{0}{4}
+\beamer@subsectionintoc {4}{3}{Dielectric function for CuIn\textsubscript {0.5}Ga\textsubscript {0.5}Se\textsubscript {2}}{25}{0}{4}
 \beamer@sectionintoc {5}{Summary}{28}{0}{5}
 \beamer@sectionintoc {6}{Future perspectives}{30}{0}{6}
 \beamer@sectionintoc {7}{Acknowledgements}{32}{0}{7}

@@ -78,7 +78,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
 \frametitle{Which field and material am I working on?}
 \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/CIGS_1.eps}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_1.eps}
 \end{center}
 \end{frame}
 
@@ -87,30 +87,68 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
 \frametitle{Why Cu(In,Ga)Se\textsubscript{2}?}
 \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/CIGS_2.eps}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_2.eps}
 \end{center}
 \end{frame}
+
+
+
+\begin{frame}
+\frametitle{Where does Cu(In,Ga)Se\textsubscript{2} come from?}
+\begin{center}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_3.eps}
+\end{center}
+\end{frame}
+
 
 
 \section{Motivation}
 \begin{frame}
  \frametitle{Which aspects of Cu(In,Ga)Se\textsubscript{2} have I been working on?}
+ 
+  \begin{itemize}
+ \item Electronic structure
  \begin{itemize}
   \item Energy bands of CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} are calculated by means of theoretical calculations. Parameterization of the
-  lowest conduction (CB) and the three uppermost valence bands (VBs) are expored based on the calculated energy bands. Carrier concentration, Fermi level, and many other aspects are analyzed based on the parameterization.
-  \item Optical properties of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} are explored by means of theoretical calculations.
+  lowest conduction (CB) and the three uppermost valence bands (VBs) are expored based on the calculated energy bands. 
+  
+  \item Analysis of density-of-states (DOS) and carrier concentration based on the parameterization.
 \end{itemize}
+
+
+  \item Optical properties
+   \begin{itemize}
+   \item Dielectric function of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} are explored by means of theoretical calculations. The band-to-band optical transitions are analyzed. 
+   The electronic origins of the observed interband critical points of the optical response are discussed.
+    \end{itemize}
+    
+    
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Motivation for the parameterization}
   \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/CIGS_3.eps}
+\includegraphics[height=0.65\textwidth]{figures/motivation1.eps}
 \end{center}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Motivation for calculation of optical properties}
+  \frametitle{Motivation for analysis of DOS and carrier concentration }
+  
+  \begin{itemize}
+
+ \item Better analyze the impact on DOS as well as carrier concentration taking into account the non-parabolicity of the energy bands.
+  \item Help experimentalists to reproduce DOS from energy-dependent DOS mass.
+  \item DOS and carrier concentration obtailed by full band parameterization and parabolic band approximation are compared. 
+ \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Motivation for calculation of dielectric function}
+  Absorption coefficient can be calculated by dielectric function directly, and thickness of material is determined by the absorption coefficient. 
   \begin{itemize}
   \item Help experimentalists to understand the dielectric function spectrum.
   \item Understand details in the optical transition for these types of materials.
@@ -142,11 +180,15 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \frametitle{Density functional theory (DFT)}
 %\begin{columns}[c]
 %\column{2in}
+DFT-based modelling is extremely successful in many-body systems.
+
 \begin{itemize}
-  \item The first theorem states that the external potential $V_{ext}(\textbf{r})$  is determined uniquely for any many-electron system by the ground-state electron density $\rho$.
-  \item The second theorem states that there is a universal functional $F[\rho]$ for the total energy in the terms of the electron density $\rho$ with any external potential $V_{ext}(\textbf{r})$ ,
-and the exact ground-state density is obtained when the ground state total energy functional reaches its minimal value, that is, E[$\rho'$] $>$ E[$\rho$]. Here, $\rho$ is the exact ground-state density.
+ \item DFT was introduced by Hohenberg and Kohn in 1964. Kohn and Pople were awarded Chemistry Nobel Prize in 1998. 
+ \item Around 20,000 papers per year.
 \end{itemize}
+
+DFT says that ground-state total energy ($E_{total}[\rho$]) can be determined from the ground-state charge density $\rho$ instead of many-electron wavefunction.
+However, we do not have explicit form for $E_{total}[\rho$].
 
 \end{frame}
 
@@ -156,116 +198,42 @@ and the exact ground-state density is obtained when the ground state total energ
 This problem in DFT is solved by KS equation:
 
 \begin{equation}\label{kse}
-\begin{split}
-&E_{total}[\rho] \ =\ T[\rho] \ + \ V_{int}[\rho] \ + \ V_{ext}[\rho]  \\
-&\ \ \   = \ T_{0}[\rho] \ + \ V_{H}[\rho] \ + V_{ext}[\rho]+\underbrace{\ (T[\rho] \ - \ T_{0}[\rho]) \ + \  (V_{int}[\rho] \ - \ V_{H}[\rho])\ }       \\
-&\ \ \   = \ T_{0}[\rho] \quad \,  + \quad \,  V_{H}[\rho] \quad \, + \quad \, V_{ext}[\rho] \quad \, + \quad \, E_{xc}[\rho].
-\end{split}
+E_{total}[\rho] \ =\ T_{0}[\rho] \quad \,  + \quad \,  V_{H}[\rho] \quad \, + \quad \, V_{ext}[\rho] \quad \, + \quad \, E_{xc}[\rho].
 \end{equation}
 
-The KS equation in \textbf{k}-space is derived as 
-
+The KS equation is derived as 
 
 \begin{equation}\label{aaa111}
- \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i,k}}(\textbf{r}) = \epsilon^{{KS}}_{{i,k}} \Psi^{{KS}}_{{i,k}}(\textbf{r}).
+ \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i}}(\textbf{r}) = \epsilon^{{KS}}_{{i}} \Psi^{{KS}}_{{i}}(\textbf{r}).
 \end{equation}
 
 
 
 The $V^{KS}(\textbf{r})$ is give as
 
-\begin{equation}\begin{split}\label{xiahunao}
-&\ V^{KS}(\textbf{r}) \ = \ V_{ext}(\textbf{r}) + \int \mathrm{d}{\textbf{r}'}  \frac{\rho(\textbf{r}')}{|{\textbf{r}}-{\textbf{r}}'|} \ + \ \frac{\delta{E_{xc}}}{\delta{\rho(\textbf{r})}} \\
-&\ = \ \ V_{ext}(\textbf{r}) + \int \mathrm{d}{\textbf{r}'}  \frac{\rho(\textbf{r}')}{|{\textbf{r}}-{\textbf{r}}'|} \ + \ V_{xc}(\textbf{r}).
-\end{split}
+\begin{equation}\label{xiahunao}
+\ V^{KS}(\textbf{r}) \ = \ V_{ext}(\textbf{r}) + \int \mathrm{d}{\textbf{r}'}  \frac{\rho(\textbf{r}')}{|{\textbf{r}}-{\textbf{r}}'|} \ + \  \overset{V_{xc}(\textbf{r})}{ \overbrace{\frac{\delta{E_{xc}}}{\delta{\rho(\textbf{r})}}}}.
 \end{equation}
 
-
-\end{frame}
-
-\begin{frame}
- \frametitle{Full-potential linearised augmented-plane wave (FPLAPW)}
- Unit cell is divided into two regions: one is sphere region called muffin tin (MT) region, which is
-defined by the center of atom, but non-overlap each sphere; the remaining region is called interstitial ($I$)
-region.
-\captionsetup{width=1\linewidth}
-\begin{figure}
-\begin{center}
- \includegraphics[scale=0.4]{figures/unitcell.eps} 
-\end{center}
- \caption{Partition of the unit cell.}
-\end{figure}
-\captionsetup{width=0.4\linewidth}
-\end{frame}
-
-\begin{frame}
-The KS wavefunction can be expanded by a set of basis functions 
- \begin{equation}
- \Psi^{KS}_{i,\textbf{k}}(\textbf{r}) = \sum\limits_{\textbf{G}}^{N_G} C_{i,\textbf{k}+\textbf{G}}\phi_{\textbf {k}+\textbf{G}}^{LAPW} ({\textbf r}).
-\end{equation}
-
-Here
-
+Here 
 \begin{equation}
-\phi^{LAPW}_{\textbf{k}+\textbf{G}} (\textbf{r}) = 
-\begin{cases} \frac {1}{\sqrt{\Omega}} e^{i(\textbf{k}+\textbf{G})\textbf{r}} & \quad \mbox{if $\textbf{r} \in {I} $}
-\\
-\sum\limits_{\alpha}\sum\limits_{{\ell}m} f_{{\ell}{m}} (r_{\alpha},\textbf{k}+\textbf{G}, \epsilon_{\ell,\alpha}) Y_{{\ell}m}(\hat{\textbf{r}}_{\alpha})  & \quad \mbox{if $r_{\alpha} \in MT. $}\\ 
-\end{cases}
+ \rho = \sum|\Psi^{{KS}}_{{i}}(\textbf{r})|^2.
 \end{equation}
 
-The potential in the FPLAPW method is also divided into two regions, the MT region and the $I$ region.
-\begin{equation}
-V(\textbf{r}) = 
-\begin{cases} \sum\limits_{\textbf G} V_{\textbf G} e^{i {\textbf G} {\textbf {r}  }} & \quad \mbox{if $\textbf{r} \in {I} $}
-\\
- \sum_{{\ell}m} V_{{\ell}m}^{\alpha} (r_{\alpha}) Y_{{\ell}m}(\hat{{\textbf r}}_{\alpha})  & \quad \mbox{if $r_{\alpha} \in MT. $}\\ 
-\end{cases}
-\end{equation}
-
-Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by electron density.
 \end{frame}
 
 
 \begin{frame}
- \frametitle{The process for solving KS equation}
+  \frametitle{Different exchange-correlation potentials $V_{xc}(\textbf{r})$}
  
- \captionsetup{width=1\linewidth}
- %%%%%%%%%%%%%%%%%%%%figure
-\tikzstyle{decision} = [diamond, draw, fill=white!20,
-    text width=10em, text badly centered, node distance=2.5cm, inner sep=0pt]
-\tikzstyle{block} = [rectangle, draw, fill=white!20,
-    text width=12em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{line} = [draw, very thick, color=black!50, -latex']
+    \begin{center}
+\includegraphics[height=0.4\textwidth]{figures/defence_figs_7.eps}
+\end{center}
 
-\begin{figure}[H]
-\centering
-\begin{tikzpicture}[scale=0.4 , node distance = 2.5cm,transform shape]
-    % Place nodes
-    \node [block] (init) {Initial guess of $\rho(\textbf{r})$ and atom configuration};
-    \node [block, below of=init] (potential) {Calculate potential $V^{KS}(\textbf{r})$ by guessed/calculated electron density};
-    \node [block, below of=potential, node distance=2.5cm] (KS) {Solve Kohn-Sham equation};
- %   \node [block, below of=KS, node distance=2.5cm] (fermi) {Calculate Fermi energy $E_F$};
-    \node [block, below of=KS, node distance=2.5cm] (density) {Calculate new density $\rho^{new}(\textbf{r})$};
-    \node [block, left of=KS, node distance=6cm] (update) {Determine the mix density $\rho^{i+1}(\textbf{r}) = F (\rho^{i}(\textbf{r}), \rho^{new}(\textbf{r})) $};
-    \node [decision, below of=density, node distance=3.8cm] (converge) {$E[\rho]$ Converged? \\ $\rho(\textbf{r})$ == $\rho^{new}(\textbf{r})$?};
-    \node [block, below of=converge, node distance=3.8cm] (done) {Finished};
-    % Draw edges
-    \path [line] (init) -- (potential);
-    \path [line] (potential) -- (KS);
-    \path [line] (KS) -- (density);
- %   \path [line] (fermi) -- (density);
-    \path [line] (density) -- (converge);
-    \path [line] (converge) -| node [pos=0.2, above, color=black] {No} (update);
-    \path [line] (update) |- (potential);
-    \path [line] (converge) -- node [pos=0.2, right, color=black] {Yes}(done);
-
-\end{tikzpicture}
-\caption{\scriptsize{Flow chart of the $(i+1)$:th iteration for solving KS equation.}}
-\label{fig:bo}
-\end{figure}
-\captionsetup{width=0.4\linewidth}
+In our calculations, we took the GGA+U (d-states), which was proved to improve the effective mass, that is curvature of energy band.
 \end{frame}
+
+
 
 
 \section{Results}
@@ -312,7 +280,7 @@ It is valid in the very vicinity of the $\Gamma$-point. However, away from the $
 \begin{minipage}{.5\textwidth}
 
   \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure2.eps}
+  \includegraphics[width=.7\linewidth]{figures/copyfigure2_paper2.eps}
   \captionof{figure}{\scriptsize{Close-up of rigth figure.}}
   \label{fig:test2}
 \end{minipage}
@@ -342,6 +310,12 @@ It is valid in the very vicinity of the $\Gamma$-point. However, away from the $
 \end{figure}
 \end{frame}
 
+
+
+
+
+
+\subsection{Analysis of density-of-states (DOS) and carrier concentration}
 
 \begin{frame}
    \frametitle{Result 1: Density-of-states (DOS)}
@@ -441,8 +415,6 @@ is defined as
 \end{figure}
   
 \end{frame}
-
-
 
 \subsection{Dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
 
@@ -599,4 +571,92 @@ are acknowledged for financial support.
  \end{center}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%% not part of talk %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+ \frametitle{Full-potential linearised augmented-plane wave (FPLAPW)}
+ Unit cell is divided into two regions: one is sphere region called muffin tin (MT) region, which is
+defined by the center of atom, but non-overlap each sphere; the remaining region is called interstitial ($I$)
+region.
+\captionsetup{width=1\linewidth}
+\begin{figure}
+\begin{center}
+ \includegraphics[scale=0.4]{figures/unitcell.eps} 
+\end{center}
+ \caption{Partition of the unit cell.}
+\end{figure}
+\captionsetup{width=0.4\linewidth}
+\end{frame}
+
+\begin{frame}
+The KS wavefunction can be expanded by a set of basis functions 
+ \begin{equation}
+ \Psi^{KS}_{i,\textbf{k}}(\textbf{r}) = \sum\limits_{\textbf{G}}^{N_G} C_{i,\textbf{k}+\textbf{G}}\phi_{\textbf {k}+\textbf{G}}^{LAPW} ({\textbf r}).
+\end{equation}
+
+Here
+
+\begin{equation}
+\phi^{LAPW}_{\textbf{k}+\textbf{G}} (\textbf{r}) = 
+\begin{cases} \frac {1}{\sqrt{\Omega}} e^{i(\textbf{k}+\textbf{G})\textbf{r}} & \quad \mbox{if $\textbf{r} \in {I} $}
+\\
+\sum\limits_{\alpha}\sum\limits_{{\ell}m} f_{{\ell}{m}} (r_{\alpha},\textbf{k}+\textbf{G}, \epsilon_{\ell,\alpha}) Y_{{\ell}m}(\hat{\textbf{r}}_{\alpha})  & \quad \mbox{if $r_{\alpha} \in MT. $}\\ 
+\end{cases}
+\end{equation}
+
+The potential in the FPLAPW method is also divided into two regions, the MT region and the $I$ region.
+\begin{equation}
+V(\textbf{r}) = 
+\begin{cases} \sum\limits_{\textbf G} V_{\textbf G} e^{i {\textbf G} {\textbf {r}  }} & \quad \mbox{if $\textbf{r} \in {I} $}
+\\
+ \sum_{{\ell}m} V_{{\ell}m}^{\alpha} (r_{\alpha}) Y_{{\ell}m}(\hat{{\textbf r}}_{\alpha})  & \quad \mbox{if $r_{\alpha} \in MT. $}\\ 
+\end{cases}
+\end{equation}
+
+Here, $V_{\textbf G}$ and $V_{{\ell}m}^{\alpha} (r_{\alpha})$ can be decided by electron density.
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{The process for solving KS equation}
+ 
+ \captionsetup{width=1\linewidth}
+ %%%%%%%%%%%%%%%%%%%%figure
+\tikzstyle{decision} = [diamond, draw, fill=white!20,
+    text width=10em, text badly centered, node distance=2.5cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=white!20,
+    text width=12em, text centered, rounded corners, minimum height=3em]
+\tikzstyle{line} = [draw, very thick, color=black!50, -latex']
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.4 , node distance = 2.5cm,transform shape]
+    % Place nodes
+    \node [block] (init) {Initial guess of $\rho(\textbf{r})$ and atom configuration};
+    \node [block, below of=init] (potential) {Calculate potential $V^{KS}(\textbf{r})$ by guessed/calculated electron density};
+    \node [block, below of=potential, node distance=2.5cm] (KS) {Solve Kohn-Sham equation};
+ %   \node [block, below of=KS, node distance=2.5cm] (fermi) {Calculate Fermi energy $E_F$};
+    \node [block, below of=KS, node distance=2.5cm] (density) {Calculate new density $\rho^{new}(\textbf{r})$};
+    \node [block, left of=KS, node distance=6cm] (update) {Determine the mix density $\rho^{i+1}(\textbf{r}) = F (\rho^{i}(\textbf{r}), \rho^{new}(\textbf{r})) $};
+    \node [decision, below of=density, node distance=3.8cm] (converge) {$E[\rho]$ Converged? \\ $\rho(\textbf{r})$ == $\rho^{new}(\textbf{r})$?};
+    \node [block, below of=converge, node distance=3.8cm] (done) {Finished};
+    % Draw edges
+    \path [line] (init) -- (potential);
+    \path [line] (potential) -- (KS);
+    \path [line] (KS) -- (density);
+ %   \path [line] (fermi) -- (density);
+    \path [line] (density) -- (converge);
+    \path [line] (converge) -| node [pos=0.2, above, color=black] {No} (update);
+    \path [line] (update) |- (potential);
+    \path [line] (converge) -- node [pos=0.2, right, color=black] {Yes}(done);
+
+\end{tikzpicture}
+\caption{\scriptsize{Flow chart of the $(i+1)$:th iteration for solving KS equation.}}
+\label{fig:bo}
+\end{figure}
+\captionsetup{width=0.4\linewidth}
+\end{frame}
+
+
 \end{document}
