@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  4 MAR 2015 16:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.16)  4 MAR 2015 16:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1281,7 +1281,19 @@ Overfull \vbox (5.18176pt too high) detected at line 135
 
 ] [10
 
-] [11
+]
+Overfull \hbox (11.3445pt too wide) detected at line 181
+[][][]\OML/cmm/m/it/8 "[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 !\OT1/cmr/m/n/8 ) = []
+ [] [] \OML/cmm/m/it/8 d[][] < \OT1/cmr/m/n/8 	[]\OMS/cmsy/m/n/8 j\OML/cmm/m/it
+/8 p[]\OMS/cmsy/m/n/8 j\OT1/cmr/m/n/8 	[] \OML/cmm/m/it/8 > \OT1/cmr/m/n/8 (\OM
+L/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 "[]\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n
+/8 ^^@ \OML/cmm/m/it/8 f\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 "[]\OT1/cmr/m/n/8 ))\OM
+L/cmm/m/it/8 ^^N\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 "[] \OMS/cmsy/m/n/8 ^^@ \OML/cm
+m/m/it/8 "[] \OMS/cmsy/m/n/8 ^^@ \OML/cmm/m/it/8 !\OT1/cmr/m/n/8 )\OML/cmm/m/it
+/8 :
+ []
+
+[11
 
 ] <figures/APL1b.jpg, id=239, 489.62926pt x 441.44925pt>
 File: figures/APL1b.jpg Graphic file (type jpg)
@@ -1546,7 +1558,7 @@ as been already used, duplicate ignored
                    \relax 
 l.376 \end{frame}
                  
-Overfull \vbox (33.33813pt too high) detected at line 376
+Overfull \vbox (13.08813pt too high) detected at line 376
  []
 
 [22
@@ -1600,7 +1612,7 @@ as been already used, duplicate ignored
                    \relax 
 l.398 \end{frame}
                  
-Overfull \vbox (28.96164pt too high) detected at line 398
+Overfull \vbox (1.71164pt too high) detected at line 398
  []
 
 [23
@@ -1653,7 +1665,7 @@ as been already used, duplicate ignored
                    \relax 
 l.420 \end{frame}
                  
-Overfull \vbox (28.96164pt too high) detected at line 420
+Overfull \vbox (5.96349pt too high) detected at line 420
  []
 
 [24
@@ -2147,7 +2159,7 @@ amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
 10.pfb>
-Output written on lic.pdf (45 pages, 5610232 bytes).
+Output written on lic.pdf (45 pages, 5612683 bytes).
 PDF statistics:
  887 PDF objects out of 1000 (max. 8388607)
  111 named destinations out of 1000 (max. 500000)
