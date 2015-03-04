@@ -19,7 +19,7 @@
 \usepackage{tikz}
 
 
-
+\setbeamertemplate{caption}[numbered]
 
 \usetikzlibrary{shapes,arrows}
 \setbeamertemplate{theorems}[numbered]
@@ -52,8 +52,9 @@
 
 \renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
 \captionsetup{width=0.4\linewidth}
-\newenvironment{sequation}{\begin{equation}\small}{\end{equation}}
 
+
+    
 \begin{document}
 
 
@@ -130,7 +131,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
   \frametitle{Motivation for the parameterization}
   \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/defence_figs_3.eps}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_4.eps}
 \end{center}
 \end{frame}
 
@@ -148,8 +149,10 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
   \frametitle{Motivation for calculation of dielectric function}
 
-  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient, that is higher absorption coefficient, thinner material is needed to absorption 
-  the same amount of light.
+  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient. That means that the material which has higher absorption coefficient uses thinner 
+  layer to absorb the same amount of light than the material which has lower absorption coefficient.
+
+
 
 {\scriptsize
 \begin{equation}\label{czr852}
@@ -195,7 +198,7 @@ Here,
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/APL1b.jpg}
+  \includegraphics[width=.9\linewidth]{figures/APL1b.jpg}
   \captionof{figure}{\scriptsize{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra.}}
   \label{fig:test1}
 \end{minipage}%
@@ -210,6 +213,11 @@ Here,
 
      
 \end{frame}
+
+
+
+
+
 
 \section{Computational methods}
 \begin{frame}
@@ -229,7 +237,7 @@ $E_{total}[\rho (\textbf{r})]$. However, we do not have explicit form for $E_{to
 Here, 
 
 \begin{equation}
- \rho (\textbf{r}) = \int d^3 r_2 \int d^3 r_3 \cdots d^3 r_N |\Psi(\textbf{r}, \textbf{r}_2, \cdots, \textbf{r}_N)|^2
+ \rho (\textbf{r}) = \int d^3 r_2 \int d^3 r_3 \cdots d^3 r_N |\Psi(\textbf{r}, \textbf{r}_2, \cdots, \textbf{r}_N)|^2.
 \end{equation}
 
 
@@ -384,14 +392,14 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/copyfigure2_paper2.eps}
+  \includegraphics[width=.75\linewidth]{figures/copyfigure2_paper2.eps}
   \captionof{figure}{\tiny{Close-up of electronic band structure. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/paper1figure3.eps}
-    \captionof{figure}{\tiny{Inverse of the effective electron and hole masses in the four symmetry directions for {CuIn\textsubscript{1-\textit{x}}Ga\textsubscript{\textit{x}}Se\textsubscript{2}} ($x$ = 0, 0.5, and 1).}}
+  \includegraphics[width=.75\linewidth]{figures/paper1figure3.eps}
+    \captionof{figure}{\tiny{Inverse of effective electron and hole masses in the four symmetry directions for {CuIn\textsubscript{1-\textit{x}}Ga\textsubscript{\textit{x}}Se\textsubscript{2}} ($x$ = 0, 0.5, and 1).}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -406,13 +414,13 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/copyfigure2_paper2.eps}
+  \includegraphics[width=.75\linewidth]{figures/copyfigure2_paper2.eps}
   \captionof{figure}{\tiny{Close-up of electronic band structure. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/fermi_sphere_cii.eps}
+  \includegraphics[width=.74\linewidth]{figures/fermi_sphere_cii.eps}
   \captionof{figure}{\tiny{Constant energy surfaces for the lowest CB and three uppermost VBs in CuInSe\textsubscript{2}.}}
   \label{fig:test2}
 \end{minipage}
@@ -453,8 +461,8 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure6.eps}
-  \captionof{figure}{\scriptsize{The DOS mass $m_{v/c}^{DOS}$ }}
+  \includegraphics[width=.8\linewidth]{figures/paper2figure6.eps}
+  \captionof{figure}{\scriptsize{DOS mass $m_{v/c}^{DOS}$. }}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -474,9 +482,13 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
   \includegraphics[width=.5\linewidth]{figures/paper2figure7b.eps}
   \captionof{figure}{\scriptsize{Intrinsic carrier concentration as function of temperature. For comparison, the theoretical results for GaAs and Si using the pba are given.}}
 \end{figure}
- \captionsetup{width=0.4\linewidth}
+
   
 \end{frame}
+
+
+
+
 
 
 \begin{frame} 
@@ -503,7 +515,7 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
 
   \centering
 
-  \includegraphics[width=.7\linewidth]{figures/paper2figure9.eps}
+  \includegraphics[width=1.0\linewidth]{figures/paper2figure9.eps}
   \caption{\scriptsize{Free carrier concentration as function of the temperature in $p$-type for $\mathrm{CuInSe_2}$, $\mathrm{CuIn_{0.5}Ga_{0.5}Se_2}$, and $\mathrm{CuGaSe_2}$.
     The effective doping concentration $N_A = 10^{13}, 10^{14}, 10^{15}$,..., and  $10^{19}$ acceptors cm\textsuperscript{$-$3} are considered. Solid and dotted lines represents the fbp and the pba, respectively.}}
 
@@ -517,24 +529,22 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
   \frametitle{Paper 3: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
 
   
-  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient, that is higher absorption coefficient, thinner material is needed to absorption 
-  the same amount of light.
-
+  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient.
 
 
    \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/APL1b.jpg}
-  \captionof{figure}{\scriptsize{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra for CuIn\textsubscript{0.7}Ga\textsubscript{0.3}Se\textsubscript{2} 
-at 40 K (solid blue line) and 300 K (dashed red lines). Four prominent CP features are shown.}}
+  \includegraphics[width=.9\linewidth]{figures/APL1b.jpg}
+  \captionof{figure}{\tiny{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra for CuIn\textsubscript{0.7}Ga\textsubscript{0.3}Se\textsubscript{2} 
+at 40 K (solid blue line) and 300 K (dashed red lines). Four prominent critical point (CP) features are shown.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/APL1a.jpg}
-  \captionof{figure}{\scriptsize{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
+  \includegraphics[width=.85\linewidth]{figures/APL1a.jpg}
+  \captionof{figure}{\tiny{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
 calculated by FPLAPW method at 0 K. The major CP features are identified.}}
   \label{fig:test2}
 \end{minipage}
@@ -550,7 +560,7 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 \captionsetup{width=1\linewidth}
 \begin{figure}
   \includegraphics[width=.5\linewidth]{figures/APL2.eps}
-  \caption{\scriptsize{Energies of each interband critical point (CP) are indicated by arrows and labeled in a numeric and alphabetic order.}}
+  \caption{\scriptsize{Energies of each interband CP are indicated by arrows and labeled in a numeric and alphabetic order.}}
 \end{figure}
 \captionsetup{width=1\linewidth}
 
@@ -563,15 +573,15 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 
      \begin{figure}
 \centering
-\begin{minipage}{.5\textwidth}
+\begin{minipage}{.45\textwidth}
   \centering
   \includegraphics[width=0.8\linewidth]{figures/APL4.eps}
   \captionof{figure}{\scriptsize{Band-to-band analysis of the contribution to the total $\varepsilon_2$ spectrum. The vertical axis is in the log scale.}}
   \label{fig:test1}
 \end{minipage}%
-\begin{minipage}{.5\textwidth}
+\begin{minipage}{.55\textwidth}
   \centering
-  \includegraphics[width=1\linewidth]{figures/APL3.eps}
+  \includegraphics[width=1.0\linewidth]{figures/APL3.eps}
   \captionof{figure}{\scriptsize{The calculated electronic band structure of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} where the CPs are identified along the main symmetry directions.}}
   \label{fig:test2}
 \end{minipage}
