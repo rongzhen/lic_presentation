@@ -1,11 +1,11 @@
 \beamer@endinputifotherversion {3.24pt}
 \beamer@sectionintoc {1}{Background}{3}{0}{1}
 \beamer@sectionintoc {2}{Motivation}{7}{0}{2}
-\beamer@sectionintoc {3}{Computational methods}{12}{0}{3}
-\beamer@sectionintoc {4}{Results}{16}{0}{4}
-\beamer@subsectionintoc {4}{1}{Paper 1: parameterization of energy bands for CIGS}{16}{0}{4}
-\beamer@subsectionintoc {4}{2}{Paper 2: analysis of density-of-states (DOS) and carrier concentration}{24}{0}{4}
-\beamer@subsectionintoc {4}{3}{Paper 3: dielectric function for CuIn\textsubscript {0.5}Ga\textsubscript {0.5}Se\textsubscript {2}}{29}{0}{4}
-\beamer@sectionintoc {5}{Summary}{32}{0}{5}
-\beamer@sectionintoc {6}{Future perspectives}{34}{0}{6}
-\beamer@sectionintoc {7}{Acknowledgements}{36}{0}{7}
+\beamer@sectionintoc {3}{Computational methods}{13}{0}{3}
+\beamer@sectionintoc {4}{Results}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{Paper 1: parameterization of energy bands for CuIn\textsubscript {1-x}Ga\textsubscript {x}Se\textsubscript {2}}{17}{0}{4}
+\beamer@subsectionintoc {4}{2}{Paper 2: analysis of density-of-states (DOS) and carrier concentration}{25}{0}{4}
+\beamer@subsectionintoc {4}{3}{Paper 3: dielectric function for CuIn\textsubscript {0.5}Ga\textsubscript {0.5}Se\textsubscript {2}}{30}{0}{4}
+\beamer@sectionintoc {5}{Summary}{33}{0}{5}
+\beamer@sectionintoc {6}{Future perspectives}{36}{0}{6}
+\beamer@sectionintoc {7}{Acknowledgements}{38}{0}{7}

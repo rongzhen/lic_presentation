@@ -52,6 +52,7 @@
 
 \renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
 \captionsetup{width=0.4\linewidth}
+\newenvironment{sequation}{\begin{equation}\small}{\end{equation}}
 
 \begin{document}
 
@@ -110,7 +111,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
  \item Electronic structure
  \begin{itemize}
   \item Energy bands of CuInSe\textsubscript{2}, CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}, and CuGaSe\textsubscript{2} are calculated by means of theoretical calculations. Parameterization of the
-  lowest conduction (CB) and the three uppermost valence bands (VBs) are expored based on the calculated energy bands. 
+  lowest conduction (CB) and the three uppermost valence bands (VBs) are explored based on the calculated energy bands. 
   
   \item Analysis of density-of-states (DOS) and carrier concentration based on the parameterization.
 \end{itemize}
@@ -129,7 +130,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
   \frametitle{Motivation for the parameterization}
   \begin{center}
-\includegraphics[height=0.65\textwidth]{figures/motivation1.eps}
+\includegraphics[height=0.65\textwidth]{figures/defence_figs_3.eps}
 \end{center}
 \end{frame}
 
@@ -139,16 +140,51 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
   \begin{itemize}
 
  \item Better analyze the impact on DOS as well as carrier concentration taking into account the non-parabolicity of the energy bands.
-  \item Help experimentalists to reproduce DOS from energy-dependent DOS mass.
-  \item DOS and carrier concentration obtailed by full band parameterization and parabolic band approximation are compared. 
+  \item Help experimentalists to reproduce DOS from energy-dependent DOS mass. Further, they can use the DOS to calculate other properties, such as 
+  carrier concentration.
  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Motivation for calculation of dielectric function}
+
+  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient, that is higher absorption coefficient, thinner material is needed to absorption 
+  the same amount of light.
+
+{\scriptsize
+\begin{equation}\label{czr852}
+ \alpha^{ii}(\omega) = \frac{\sqrt{2}\omega}{c} \left[ \sqrt{{\varepsilon^{ii}_1(\omega)}^2+{\varepsilon^{ii}_2(\omega)}^2}-{\varepsilon^{ii}_1(\omega)} \right]^{1/2}.
+\end{equation}
+}
+
+
+Here, 
+{\scriptsize
+\begin{equation}\label{df2}
+\varepsilon_2^{\alpha\beta} (\omega)= \frac{\hbar e^2}{\pi m^2\omega^2} \sum_{cv} \int d \textbf {k} <\Psi_{c{\textbf k}}|p^\alpha|\Psi_{v{\textbf k}}><\Psi_{v{\textbf k}}|p^\beta|\Psi_{c{\textbf k}}> (f(\varepsilon_{c \textbf k})-f(\varepsilon_{v \textbf k}))\delta(\varepsilon_{c {\textbf k}}-\varepsilon_{c{\textbf k}}-\omega).
+\end{equation}
+}
+
+{\scriptsize
+\begin{equation}
+ \varepsilon_1^{\alpha\beta} (\omega)= \delta_{\alpha\beta}+\frac{2}{\pi}\textbf{P}\int^{\infty}_{0} \frac{\omega'\varepsilon_2^{\alpha\beta}(\omega')}{\omega'^{2}-\omega^{2}} d\omega'.
+\end{equation}
+}
+
+%  
+  
+  
+ % \begin{center}
+%\includegraphics[height=0.2\textwidth]{figures/defence_figs_8.eps}
+%\end{center}
+
 \end{frame}
 
 
 
 \begin{frame}
   \frametitle{Motivation for calculation of dielectric function}
-  Absorption coefficient can be calculated by dielectric function directly, and thickness of material is determined by the absorption coefficient. 
+
   \begin{itemize}
   \item Help experimentalists to understand the dielectric function spectrum.
   \item Understand details in the optical transition for these types of materials.
@@ -180,7 +216,7 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \frametitle{Density functional theory (DFT)}
 %\begin{columns}[c]
 %\column{2in}
-DFT-based modelling is extremely successful in many-body systems.
+DFT-based modeling is extremely successful in many-body systems.
 
 \begin{itemize}
  \item DFT was introduced by Hohenberg and Kohn in 1964. Kohn and Pople were awarded Chemistry Nobel Prize in 1998. 
@@ -195,13 +231,13 @@ However, we do not have explicit form for $E_{total}[\rho$].
 \begin{frame}
  \frametitle{Kohn-Sham (KS) Equation}
  
-This problem in DFT is solved by KS equation:
+Total Energy can be written as
 
 \begin{equation}\label{kse}
 E_{total}[\rho] \ =\ T_{0}[\rho] \quad \,  + \quad \,  V_{H}[\rho] \quad \, + \quad \, V_{ext}[\rho] \quad \, + \quad \, E_{xc}[\rho].
 \end{equation}
 
-The KS equation is derived as 
+The single-particle KS equation is derived as 
 
 \begin{equation}\label{aaa111}
  \Big(-\frac{\nabla^{2}}{2}\ + \ V^{KS}(\textbf{r})\Big) \Psi^{{KS}}_{{i}}(\textbf{r}) = \epsilon^{{KS}}_{{i}} \Psi^{{KS}}_{{i}}(\textbf{r}).
@@ -231,13 +267,14 @@ Here
 \end{center}
 
 In our calculations, we took the GGA+U (d-states), which was proved to improve the effective mass, that is curvature of energy band.
+%LDA: local-density approximation. GGA: Generalized gradient approximations. DFT+U: U term separates localized d or f electrons.
 \end{frame}
 
 
 
 
 \section{Results}
-\subsection{Paper 1: parameterization of energy bands for CIGS}
+\subsection{Paper 1: parameterization of energy bands for CuIn\textsubscript{1-x}Ga\textsubscript{x}Se\textsubscript{2}}
 
 \begin{frame}
 \frametitle{Paper 1: parabolic band approximation (pba)}
@@ -245,11 +282,11 @@ The parabolic approximation of ellipsoidal energy bands is expressed
 \begin{equation}
 \begin{split}
 & E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{xy}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{z}} \right] \\
-&  m^{ab} = \pm \hbar^2 / (\partial E(\textbf{k}) / \partial{k_a}{{k_b}}).
+&  m^{ab} = \pm \hbar^2 / (\partial^2 E(\textbf{k}) / \partial{k_a}\partial{{k_b}}).
 \end{split}
 \end{equation}
 
-In the case of ideal parabolic energy band, the pba can discribe energy band perfecly.
+In the case of ideal parabolic energy band, the pba can describe energy band perfectly.
 
     \begin{center}
 \includegraphics[height=0.4\textwidth]{figures/parabolic_1.eps}
@@ -263,7 +300,7 @@ The parabolic approximation of ellipsoidal energy bands is expressed
 \begin{equation}
 \begin{split}
 & E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{xy}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{z}} \right] \\
-&  m^{ab} = \pm \hbar^2 / (\partial E(\textbf{k}) / \partial{k_a}{{k_b}}).
+&  m^{ab} = \pm \hbar^2 / (\partial^2 E(\textbf{k}) / \partial{k_a}\partial{{k_b}}).
 \end{split}
 \end{equation}
 
@@ -282,7 +319,7 @@ The parabolic approximation of ellipsoidal energy bands is expressed
 \begin{equation}
 \begin{split}
 & E_{j}^{pb}(\textbf{k}) = E_{j}(\textbf{0}) \pm \left[ \frac{\widetilde{\textbf{k}}_{x}^{2}+\widetilde{ \textbf{k}}_{y}^{2}}{m_{j}^{xy}} + \frac{\widetilde{\textbf{k}}_{z}^{2}}{m_{j}^{z}} \right] \\
-&  m^{ab} = \pm \hbar^2 / (\partial E(\textbf{k}) / \partial{k_a}{{k_b}}).
+&  m^{ab} = \pm \hbar^2 / (\partial^2 E(\textbf{k}) / \partial{k_a}\partial{{k_b}}).
 \end{split}
 \end{equation}
 
@@ -297,7 +334,7 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 
 
 \begin{frame}
- \frametitle{Paper 1: Full band parameterization (fbp)}
+ \frametitle{Paper 1: full band parameterization (fbp)}
 \begin{equation}
 \begin{split}
 & \small E_j(\textbf{k}) = E_{j}^{pb}(\textbf{k}) + E_j^0 + \Delta_{j,1} \left( \delta_{j,1}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{4}+\widetilde{ \textbf{k}}_{y}^{4}}{m_{0}^{2}} \right) + \delta_{j,2}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{2}}{m_{0}^2} \right) + 1 \right)^{1/2} \\
@@ -311,7 +348,7 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 
 
 \begin{frame}
- \frametitle{Paper 1: Parameterization of band structure for CIGS}
+ \frametitle{Paper 1: parameterization of band structure for CIGS}
   \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
@@ -324,7 +361,7 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 
   \centering
   \includegraphics[width=.8\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\scriptsize{Close-up of rigth figure.}}
+  \captionof{figure}{\scriptsize{Close-up of the right figure.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -333,7 +370,7 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 
 
 \begin{frame}
-  \frametitle{Paper 1: Non-parabolicity of the energy bands}
+  \frametitle{Paper 1: non-parabolicity of the energy bands}
 
   
   \begin{figure}
@@ -355,7 +392,7 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 
 
 \begin{frame}
-  \frametitle{Paper 1: Non-parabolicity of the energy bands}
+  \frametitle{Paper 1: non-parabolicity of the energy bands}
 
   
   \begin{figure}
@@ -380,7 +417,7 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 \subsection{Paper 2: analysis of density-of-states (DOS) and carrier concentration}
 
 \begin{frame}
-   \frametitle{Paper 2: Density-of-states (DOS)}
+   \frametitle{Paper 2: density-of-states (DOS)}
 In the case of the pba, the density-of-states can be written as
 
 \begin{equation}\label{dosjp}
@@ -398,7 +435,7 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
 
 
 \begin{frame}
-  \frametitle{Paper 2: Density-of-states (DOS) and DOS mass}
+  \frametitle{Paper 2: density-of-states (DOS) and DOS mass}
  \begin{figure}
 \centering
 \begin{minipage}{.5\textwidth}
@@ -434,8 +471,19 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
   
 \end{frame}
 
+
 \begin{frame} 
-  \frametitle{Paper 2: Carrier concentration in $p$-type for CIGS}
+  \frametitle{Paper 2: carrier concentration in different temperatures}
+  
+  
+  
+  
+  \end{frame}
+  
+
+
+\begin{frame} 
+  \frametitle{Paper 2: carrier concentration in $p$-type for CIGS}
 
   
   \captionsetup{width=1\linewidth}
@@ -457,7 +505,12 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
 \subsection{Paper 3: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
 
 \begin{frame}
-  \frametitle{Result 2: Dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
+  \frametitle{Paper 3: dielectric function for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}}
+
+  
+  Absorption coefficient can be calculated by dielectric function directly, and
+thickness of material is determined by the absorption coefficient.
+
 
    \begin{figure}
 \centering
@@ -486,7 +539,7 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 \captionsetup{width=1\linewidth}
 \begin{figure}
   \includegraphics[width=.5\linewidth]{figures/APL2.eps}
-  \caption{\scriptsize{Energies of each interband critial point (CP) are indicated by arrows and labeled in a numeric and alphabetic order.}}
+  \caption{\scriptsize{Energies of each interband critical point (CP) are indicated by arrows and labeled in a numeric and alphabetic order.}}
 \end{figure}
 \captionsetup{width=1\linewidth}
 
@@ -495,7 +548,7 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 
 
 \begin{frame}
-  \frametitle{Result 2: Analysis of the imaginary part of dielectric function}
+  \frametitle{Paper 3: analysis of the imaginary part of dielectric function}
 
      \begin{figure}
 \centering
@@ -519,19 +572,45 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 
 \section{Summary}
 \begin{frame}
-  \frametitle{Summary}
+\frametitle{Summary}
 
  
+
+\begin{itemize}
  
- In this licentiate thesis, two major researches are presented:
+ \item Paper 1:
 
 
  \begin{itemize}
-  \item Analysis of the electronic structure of CuIn{\textsubscript{1-$x$}}Ga{\textsubscript{$x$}}Se\textsubscript{2} with $x$ = 0, 0.5, and 1. Here, we parameterize the energy bands in order to better describe energy
-  dispersions and better analyze the electron and hole dynamics in the materials. We consider intrinsic and $p$-type  materials, and we model the temperature dependence.
-  \item Analysis of the optical properties of CuIn{\textsubscript{0.5}}Ga{\textsubscript{0.5}}Se\textsubscript{2}. Here, the dielectric function spectra is calculated and compared with experimental result. 
-  The probable electronic origins of the critical point features are discussed as well.
+  \item The energy dispersions of the three uppermost VBs are strongly anisotropic and non-parabolic even very close to the $\Gamma$-point VBM.
+\item The full band parameterization is valid around 0.5 eV below VBM and 0.5 eV above the conduction band minimum (CBM).
+\item All the three CuIn\textsubscript{1-x}Ga\textsubscript{x}Se\textsubscript{2} ($x$ = 0, 0.5, and 1.0) compositions show comparable \textbf{k}-dependency of their effective hole masses.
 \end{itemize}
+
+ \item Paper 2:
+ 
+ \begin{itemize}
+\item An energy-dependent DOS mass is introduced, and it can be utilized to describe
+the carrier concentration and the Fermi energy using traditional equations for the DOS.
+\item The transition from the freeze-out region to the extrinsic region occurs well below the room temperature for uncompensated acceptor concentration below 
+around 10\textsuperscript{17} cm\textsuperscript{$-$3}, whereas for higher concentrations, not all acceptors are ionized at \textit{T} = 300 K. Thus, a more correct description of the energy dispersions is needed.
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \begin{itemize}
+\item Paper 3:
+
+ \begin{itemize}
+\item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
+\item  Electronic origins of the observed critical-point (CP) features are discussed based on our theoretical calculations.
+\item  The pairs of valence and conduction bands along the main symmetry directions of Brillouin zone are suggested for the major CP features based on our theoretical calculations.
+\end{itemize}
+
+\end{itemize}
+
+
 
 \end{frame}
 
