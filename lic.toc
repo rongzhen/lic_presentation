@@ -7,5 +7,5 @@
 \beamer@subsectionintoc {4}{2}{Paper 2: analysis of density-of-states (DOS) and carrier concentration}{25}{0}{4}
 \beamer@subsectionintoc {4}{3}{Paper 3: dielectric function for CuIn\textsubscript {0.5}Ga\textsubscript {0.5}Se\textsubscript {2}}{30}{0}{4}
 \beamer@sectionintoc {5}{Summary}{33}{0}{5}
-\beamer@sectionintoc {6}{Future perspectives}{36}{0}{6}
-\beamer@sectionintoc {7}{Acknowledgements}{38}{0}{7}
+\beamer@sectionintoc {6}{Future perspectives}{35}{0}{6}
+\beamer@sectionintoc {7}{Acknowledgements}{37}{0}{7}

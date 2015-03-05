@@ -18,8 +18,9 @@
 \usepackage{fixltx2e}
 \usepackage{tikz}
 
-
-\setbeamertemplate{caption}[numbered]
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+\def\mathunderline#1#2{\color{#1}\underline{{\color{black}#2}}\color{black}}
 
 \usetikzlibrary{shapes,arrows}
 \setbeamertemplate{theorems}[numbered]
@@ -51,7 +52,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
-\captionsetup{width=0.4\linewidth}
+
 
 
     
@@ -149,12 +150,12 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 \begin{frame}
   \frametitle{Motivation for calculation of dielectric function}
 
-  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient. That means that the material which has higher absorption coefficient uses thinner 
-  layer to absorb the same amount of light than the material which has lower absorption coefficient.
+  Absorption coefficient can be calculated by dielectric function directly.  The absorption depth is given by the inverse of the absorption coefficient. 
+  %That means that the material which has higher absorption coefficient uses thinner layer to absorb the same amount of light than the material which has lower absorption coefficient.
 
 
 
-{\scriptsize
+{
 \begin{equation}\label{czr852}
  \alpha^{ii}(\omega) = \frac{\sqrt{2}\omega}{c} \left[ \sqrt{{\varepsilon^{ii}_1(\omega)}^2+{\varepsilon^{ii}_2(\omega)}^2}-{\varepsilon^{ii}_1(\omega)} \right]^{1/2}.
 \end{equation}
@@ -162,17 +163,16 @@ Royal Institute of Technology, Stockholm SE-10044, Sweden}}
 
 
 Here, 
-{\scriptsize
-\begin{equation}\label{df2}
-\varepsilon_2^{\alpha\beta} (\omega)= \frac{\hbar e^2}{\pi m^2\omega^2} \sum_{cv} \int d \textbf {k}  \underset{optical \thinspace matrix \thinspace element}{\underbrace{<\Psi_{c{\textbf k}}|p^\alpha|\Psi_{v{\textbf k}}>}}  <\Psi_{v{\textbf k}}|p^\beta|\Psi_{c{\textbf k}}> (f(\varepsilon_{c \textbf k})-f(\varepsilon_{v \textbf k}))\delta(\varepsilon_{c {\textbf k}}-\varepsilon_{c{\textbf k}}-\omega).
+{
+\begin{equation}\begin{split}\label{df2}
+& \varepsilon_2^{\alpha\beta} (\omega)= \frac{\hbar e^2}{\pi m^2\omega^2} \sum_{cv} \int d \textbf {k}  \overset{optical \thinspace matrix \thinspace element}{\overbrace{<\Psi_{c{\textbf k}}|p^\alpha|\Psi_{v{\textbf k}}>}}  <\Psi_{v{\textbf k}}|p^\beta|\Psi_{c{\textbf k}}> \\
+& \quad \quad \quad \quad (f(\varepsilon_{c \textbf k})-f(\varepsilon_{v \textbf k}))\delta(\varepsilon_{c {\textbf k}}-\varepsilon_{c{\textbf k}}-\omega). \\
+& \\
+&  \varepsilon_1^{\alpha\beta} (\omega)= \delta_{\alpha\beta}+\frac{2}{\pi}\textbf{P}\int^{\infty}_{0} \frac{\omega'\varepsilon_2^{\alpha\beta}(\omega')}{\omega'^{2}-\omega^{2}} d\omega'.
+\end{split}
 \end{equation}
 }
 
-{\scriptsize
-\begin{equation}
- \varepsilon_1^{\alpha\beta} (\omega)= \delta_{\alpha\beta}+\frac{2}{\pi}\textbf{P}\int^{\infty}_{0} \frac{\omega'\varepsilon_2^{\alpha\beta}(\omega')}{\omega'^{2}-\omega^{2}} d\omega'.
-\end{equation}
-}
 
 %  
   
@@ -183,7 +183,7 @@ Here,
 
 \end{frame}
 
-
+\captionsetup{width=0.45\linewidth}
 
 \begin{frame}
   \frametitle{Motivation for calculation of dielectric function}
@@ -193,19 +193,19 @@ Here,
   \item Understand details in the optical transition for these types of materials.
 \end{itemize}
 
-     
+ 
   \begin{figure}
 \centering
-\begin{minipage}{.5\textwidth}
+\begin{minipage}[b]{.5\textwidth}
   \centering
   \includegraphics[width=.9\linewidth]{figures/APL1b.jpg}
-  \captionof{figure}{\scriptsize{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra.}}
+  \captionof{figure}{{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function.}}
   \label{fig:test1}
 \end{minipage}%
-\begin{minipage}{.5\textwidth}
+\begin{minipage}[b]{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/CIGS_4.eps}
-  \captionof{figure}{\scriptsize{Energy bands.}}
+  \includegraphics[width=.8\linewidth]{figures/CIGS_4.eps}
+  \captionof{figure}{{Energy bands.\quad \quad  \quad \quad  \quad }}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -215,8 +215,7 @@ Here,
 \end{frame}
 
 
-
-
+\captionsetup{width=0.4\linewidth}
 
 
 \section{Computational methods}
@@ -268,7 +267,7 @@ The $V^{KS}(\textbf{r})$ is give as
 
 Here 
 \begin{equation}
- \rho = \sum|\Psi^{{KS}}_{{i}}(\textbf{r})|^2.
+ \rho = \sum|\psi^{{KS}}_{{i}}(\textbf{r})|^2.
 \end{equation}
 
 \end{frame}
@@ -352,11 +351,11 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
  \frametitle{Paper 1: full band parameterization (fbp)}
 \begin{equation}
 \begin{split}
-& \small E_j(\textbf{k}) = E_{j}^{pb}(\textbf{k}) + E_j^0 + \Delta_{j,1} \left( \delta_{j,1}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{4}+\widetilde{ \textbf{k}}_{y}^{4}}{m_{0}^{2}} \right) + \delta_{j,2}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{2}}{m_{0}^2} \right) + 1 \right)^{1/2} \\
-& \small + \Delta_{j,2} \left( \delta_{j,3}^3 \left( \frac{\widetilde{\textbf{k}}_{x}^{6}+\widetilde{ \textbf{k}}_{y}^{6}}{m_{0}^{3}} \right) + \delta_{j,4}^3 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{4} + \widetilde{\textbf{k}}_{x}^{4}\widetilde{\textbf{k}}_{y}^{2}}{m_{0}^3} \right) + 1 \right)^{1/3} \\
-& \small + \Delta_{j,3} \left( \delta_{j,5}^2 \left( \frac{\widetilde{\textbf{k}}_{z}^{4}}{m_0^2} \right) + 1 \right)^{1/2} + \Delta_{j,4} \left( \delta_{j,6}^3 \left( \frac{\widetilde{\textbf{k}}_{z}^{6}}{m_0^3} \right) + 1 \right)^{1/3} \\
-& \small + \Delta_{j,5} \left( \delta_{j,7}^2 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{z}^{2} + \widetilde{\textbf{k}}_{y}^{2}\widetilde{\textbf{k}}_{z}^{2}}{m_{0}^2} \right) + 1 \right)^{1/2} \\
-& \small + \Delta_{j,6} \left( \delta_{j,8}^3 \left( \frac{\widetilde{\textbf{k}}_{x}^{4}\widetilde{\textbf{k}}_{z}^{2} + \widetilde{\textbf{k}}_{y}^{4}\widetilde{\textbf{k}}_{z}^{2}}{m_{0}^3} \right) + \delta_{j,9}^3 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{z}^{4} + \widetilde{\textbf{k}}_{y}^{2}\widetilde{\textbf{k}}_{z}^{4}}{m_{0}^3} \right) + \delta_{j,10}^3 \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{2}\widetilde{\textbf{k}}_{z}^{2}}{m_{0}^3} \right) +1 \right)^{1/3}. 
+& \small E_j(\textbf{k}) = E_{j}^{pb}(\textbf{k}) + \mathunderline{red}{E_j^0} + \mathunderline{red}{\Delta_{j,1}} \left( \mathunderline{red}{\delta_{j,1}^2} \left( \frac{\widetilde{\textbf{k}}_{x}^{4}+\widetilde{ \textbf{k}}_{y}^{4}}{m_{0}^{2}} \right) + \mathunderline{red}{\delta_{j,2}^2} \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{2}}{m_{0}^2} \right) + 1 \right)^{1/2} \\
+& \small + \mathunderline{red}{\Delta_{j,2}} \left( \mathunderline{red}{\delta_{j,3}^3} \left( \frac{\widetilde{\textbf{k}}_{x}^{6}+\widetilde{ \textbf{k}}_{y}^{6}}{m_{0}^{3}} \right) + \mathunderline{red}{\delta_{j,4}^3} \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{4} + \widetilde{\textbf{k}}_{x}^{4}\widetilde{\textbf{k}}_{y}^{2}}{m_{0}^3} \right) + 1 \right)^{1/3} \\
+& \small + \mathunderline{red}{\Delta_{j,3}} \left(\mathunderline{red}{ \delta_{j,5}^2} \left( \frac{\widetilde{\textbf{k}}_{z}^{4}}{m_0^2} \right) + 1 \right)^{1/2} + \mathunderline{red}{\Delta_{j,4}} \left( \delta_{j,6}^3 \left( \frac{\widetilde{\textbf{k}}_{z}^{6}}{m_0^3} \right) + 1 \right)^{1/3} \\
+& \small + \mathunderline{red}{\Delta_{j,5}} \left( \mathunderline{red}{\delta_{j,7}^2} \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{z}^{2} + \widetilde{\textbf{k}}_{y}^{2}\widetilde{\textbf{k}}_{z}^{2}}{m_{0}^2} \right) + 1 \right)^{1/2} \\
+& \small + \mathunderline{red}{\Delta_{j,6}} \left( \mathunderline{red}{\delta_{j,8}^3} \left( \frac{\widetilde{\textbf{k}}_{x}^{4}\widetilde{\textbf{k}}_{z}^{2} + \widetilde{\textbf{k}}_{y}^{4}\widetilde{\textbf{k}}_{z}^{2}}{m_{0}^3} \right) + \mathunderline{red}{\delta_{j,9}^3} \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{z}^{4} + \widetilde{\textbf{k}}_{y}^{2}\widetilde{\textbf{k}}_{z}^{4}}{m_{0}^3} \right) + \mathunderline{red}{\delta_{j,10}^3} \left( \frac{\widetilde{\textbf{k}}_{x}^{2}\widetilde{\textbf{k}}_{y}^{2}\widetilde{\textbf{k}}_{z}^{2}}{m_{0}^3} \right) +1 \right)^{1/3}. 
 \end{split}
 \end{equation}
 \end{frame}
@@ -368,15 +367,15 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure1.eps}
-  \captionof{figure}{\tiny{ Electronic band structure along four directions. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
+  \includegraphics[width=.8\linewidth]{figures/paper2figure1.eps}
+  \captionof{figure}{\tiny{ Band structure along four directions. Circles(fbp), Dotted(pba), and solid lines (calculation).}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
 
   \centering
   \includegraphics[width=.8\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\tiny{Close-up of the right figure.}}
+  \captionof{figure}{\tiny{Close-up of the left figure.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -392,14 +391,14 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.75\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\tiny{Close-up of electronic band structure. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
+  \includegraphics[width=.8\linewidth]{figures/copyfigure2_paper2.eps}
+  \captionof{figure}{\tiny{Close-up of electronic band structure.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.75\linewidth]{figures/paper1figure3.eps}
-    \captionof{figure}{\tiny{Inverse of effective electron and hole masses in the four symmetry directions for {CuIn\textsubscript{1-\textit{x}}Ga\textsubscript{\textit{x}}Se\textsubscript{2}} ($x$ = 0, 0.5, and 1).}}
+  \includegraphics[width=.785\linewidth]{figures/paper1figure3.eps}
+    \captionof{figure}{\tiny{Inverse of effective electron and hole masses.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -414,14 +413,14 @@ Considering spin-orbit coupling and crystal-field split, the energy band becomes
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.75\linewidth]{figures/copyfigure2_paper2.eps}
-  \captionof{figure}{\tiny{Close-up of electronic band structure. The circles are the results of the fbp, the dotted lines represent the pba, and the solid lines represent the theoretical calculation.}}
+  \includegraphics[width=.85\linewidth]{figures/copyfigure2_paper2.eps}
+  \captionof{figure}{\tiny{Close-up of electronic band structure.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.74\linewidth]{figures/fermi_sphere_cii.eps}
-  \captionof{figure}{\tiny{Constant energy surfaces for the lowest CB and three uppermost VBs in CuInSe\textsubscript{2}.}}
+  \includegraphics[width=.79\linewidth]{figures/fermi_sphere_cii.eps}
+  \captionof{figure}{\tiny{Constant energy surfaces.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -455,14 +454,14 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.7\linewidth]{figures/paper2figure4.eps}
-  \captionof{figure}{\scriptsize{Total DOS of the VBs and CB. The solid lines show the results based on the fbp, and the dashed lines represent the results based on the pba.}}
+  \includegraphics[width=.85\linewidth]{figures/paper2figure4.eps}
+  \captionof{figure}{\tiny{Total DOS of the VBs and CB.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=.8\linewidth]{figures/paper2figure6.eps}
-  \captionof{figure}{\scriptsize{DOS mass $m_{v/c}^{DOS}$. }}
+  \includegraphics[width=.82\linewidth]{figures/paper2figure6.eps}
+  \captionof{figure}{\tiny{DOS mass. \quad \quad \quad \quad \quad \quad}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -537,15 +536,15 @@ In order to take advantage of the simple \textbf{Eq. \ref{dosjp}} for the non-pa
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.9\linewidth]{figures/APL1b.jpg}
-  \captionof{figure}{\tiny{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra for CuIn\textsubscript{0.7}Ga\textsubscript{0.3}Se\textsubscript{2} 
-at 40 K (solid blue line) and 300 K (dashed red lines). Four prominent critical point (CP) features are shown.}}
+  \captionof{figure}{{The real ($\varepsilon_1$) and imaginary ($\varepsilon_2$) part of dielectric function spectra for CuIn\textsubscript{0.7}Ga\textsubscript{0.3}Se\textsubscript{2} 
+at 40 K (solid line) and 300 K (dashed lines).}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=.85\linewidth]{figures/APL1a.jpg}
-  \captionof{figure}{\tiny{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
-calculated by FPLAPW method at 0 K. The major CP features are identified.}}
+  \captionof{figure}{{The dielectric function spectra for CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2}
+calculated by FPLAPW method at 0 K.}}
   \label{fig:test2}
 \end{minipage}
 \end{figure}
@@ -575,13 +574,14 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 \centering
 \begin{minipage}{.45\textwidth}
   \centering
-  \includegraphics[width=0.8\linewidth]{figures/APL4.eps}
+  \includegraphics[width=0.9\linewidth]{figures/APL4.eps}
   \captionof{figure}{\scriptsize{Band-to-band analysis of the contribution to the total $\varepsilon_2$ spectrum. The vertical axis is in the log scale.}}
   \label{fig:test1}
 \end{minipage}%
 \begin{minipage}{.55\textwidth}
   \centering
   \includegraphics[width=1.0\linewidth]{figures/APL3.eps}
+  \captionsetup{width=0.9\linewidth}
   \captionof{figure}{\scriptsize{The calculated electronic band structure of CuIn\textsubscript{0.5}Ga\textsubscript{0.5}Se\textsubscript{2} where the CPs are identified along the main symmetry directions.}}
   \label{fig:test2}
 \end{minipage}
@@ -603,30 +603,25 @@ calculated by FPLAPW method at 0 K. The major CP features are identified.}}
 
 
  \begin{itemize}
-  \item The energy dispersions of the three uppermost VBs are strongly anisotropic and non-parabolic even very close to the $\Gamma$-point VBM.
-\item The full band parameterization is valid around 0.5 eV below VBM and 0.5 eV above the conduction band minimum (CBM).
-\item All the three CuIn\textsubscript{1-x}Ga\textsubscript{x}Se\textsubscript{2} ($x$ = 0, 0.5, and 1.0) compositions show comparable \textbf{k}-dependency of their effective hole masses.
+\item Eergy bands are non-parabolic even very close to the $\Gamma$-point.
+\item The full band parameterization is valid around 0.5 eV below the valence band maximum and 0.5 eV above the conduction band minimum.
+\item The effective masses are \textbf{k}-dependency.
 \end{itemize}
 
  \item Paper 2:
  
  \begin{itemize}
-\item An energy-dependent DOS mass is introduced, and it can be utilized to describe
-the carrier concentration and the Fermi energy using traditional equations for the DOS.
+\item Energy-dependent DOS mass is introduced.
 \item The transition from the freeze-out region to the extrinsic region occurs well below the room temperature for uncompensated acceptor concentration below 
-around 10\textsuperscript{17} cm\textsuperscript{$-$3}, whereas for higher concentrations, not all acceptors are ionized at \textit{T} = 300 K. Thus, a more correct description of the energy dispersions is needed.
+around 10\textsuperscript{17} cm\textsuperscript{$-$3}.
 \end{itemize}
-\end{itemize}
-\end{frame}
 
-\begin{frame}
- \begin{itemize}
 \item Paper 3:
 
  \begin{itemize}
 \item  The dielectric function calculated by our theoretical method shows a good agreement with the result of experiment.
-\item  Electronic origins of the observed critical-point (CP) features are discussed based on our theoretical calculations.
-\item  The pairs of valence and conduction bands along the main symmetry directions of Brillouin zone are suggested for the major CP features based on our theoretical calculations.
+\item  Electronic origins of the observed critical-point features are discussed.
+\item  The pairs of valence and conduction bands along the main symmetry directions of Brillouin zone are suggested for the major CP features.
 \end{itemize}
 
 \end{itemize}
